@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/* CSS RESET y BACKGROUND GENERAL */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* FUENTES, ESTILOS, TAMAÑO Y COLORES */
+@font-face {
+  font-family: "Harabara";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Harabara"), url("https://fonts.cdnfonts.com/s/8571/Harabara.woff") format("woff"); }
+
+.logo {
+  font-family: "Harabara", sans-serif;
+  font-size: 18px !important;
+  letter-spacing: 1px; }
+
+header,
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold; }
+
+h2,
+h3,
+h5,
+p,
+ul,
+ol,
+tr,
+th,
+td,
+form {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-weight: 375;
+  line-height: 1.2; }
+
+.mainHome__tituMain {
+  font-size: 2.5rem; }
+
+.titulares {
+  color: orangered;
+  margin: 10px 10px; }
+
+.whiteText,
+h5 {
+  color: white;
+  margin: 10px 10px; }
+
+.centerText {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 3rem;
+  padding: 2rem 2rem 2rem 2rem; }
+
+.tablasColor1 {
+  background-color: turquoise;
+  color: #1100ff;
+  margin: 10px;
+  list-style-position: inside;
+  list-style-type: upper-latin; }
+
+/* BACKGROUNDS */
+body {
+  background-color: #0f1108; }
+
+.backgroundHome {
+  background: linear-gradient(135deg, #080909, #40704c, #175627, #0d7828);
+  background-size: 800% 800%;
+  animation: AnimationName 8s ease infinite; }
+
+main {
+  width: 100%; }
+
+.retrato {
+  margin: 10px 10px 10px 10px;
+  position: relative;
+  left: 1200px;
+  bottom: 100px; }
+
+/* HEADER Y CONTENEDORES */
+.contenedor {
+  width: 95%;
+  max-width: 1700px;
+  margin: 0 auto; }
+
+.header {
+  background-color: #0f1108;
+  padding: 1.5rem 0; }
+  .header a {
+    color: white;
+    text-decoration: none; }
+  .header ul li a:hover {
+    color: tomato;
+    opacity: 1; }
+
+.header__logonavContenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.navegacion ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none; }
+  .navegacion ul li {
+    display: inline-block;
+    opacity: 0.7;
+    margin-left: 1rem; }
+  .navegacion ul ul li a {
+    display: block;
+    padding: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+    opacity: 0.4; }
+  .navegacion ul img {
+    width: 22px;
+    color: white;
+    opacity: 0.7; }
+  .navegacion ul ul li:hover {
+    opacity: 1; }
+  .navegacion ul a {
+    text-decoration: none; }
+
+.footer {
+  padding: 1.3rem 0;
+  background-color: #191919; }
+
+.footerHome {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100% !important;
+}
+
+.has-text-right {
+  text-align: right !important; }
+
+/* FORMULARIOS */
+.contenedorForm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; }
+
+.formulario {
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 740px;
+  margin-right: 500px;
+  margin-bottom: 75px;
+  background-color: white;
+  border: solid grey 1px;
+  border-radius: 6px;
+  padding: 1.25rem; }
+  .formulario label {
+    text-decoration: bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5; }
+  .formulario input {
+    border: 1px black solid transparent;
+    display: block;
+    min-width: 100%;
+    max-width: 100%; }
+  .formulario textarea {
+    min-width: 100%;
+    max-width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .formulario {
+    width: 300px;
+    margin-left: 15px !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .formulario {
+    width: 400px;
+    margin-left: 160px !important;
+    margin-bottom: 200px !important; } }
+
+.inputs {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px; }
+
+/* CAJAS SECCION PROYECTOS */
+.cajasProyecto {
+  border: solid white 0.1px;
+  width: 350px;
+  height: 450px;
+  display: block;
+  margin-top: 40px;
+  margin-right: 80px;
+  margin-bottom: 20px; }
+  .cajasProyecto span {
+    margin-left: 10px; }
+  .cajasProyecto a:hover {
+    opacity: 1; }
+  .cajasProyecto a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.4;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 20px; }
+  .cajasProyecto #imgBienes {
+    margin-top: 125px;
+    margin-bottom: 105px;
+    height: auto; }
+  .cajasProyecto img {
+    width: 300px;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 25px; }
+
+.cajaInfo {
+  background-color: #0f1108; }
+
+.sectionA__contenedorCajas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-left: 80px; }
+  .sectionA__contenedorCajas h3 {
+    color: tomato;
+    margin-top: 35px;
+    margin-left: 25px; }
+  .sectionA__contenedorCajas p {
+    color: #3d3b3b;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 20px; }
+
+.sectionA__box {
+  background-color: #d6d4d4;
+  border: solid #d6d4d4 0.8px;
+  height: 330px;
+  width: 210px;
+  padding: 20px;
+  display: block;
+  border-radius: 10px;
+  margin-right: 25px;
+  margin-bottom: 2rem; }
+  .sectionA__box img {
+    margin-left: 6px; }
+
+.sectionA {
+  background-color: #e94f37;
+  height: 550px; }
+  .sectionA h2 {
+    margin-top: 10px; }
+
+.sectionB h2 {
+  color: tomato;
+  margin-top: 230px; }
+
+.sectionB ul li {
+  margin-top: 30px; }
+
+.contenedorCentral {
+  margin-right: 200px;
+  margin-top: 40px;
+  margin-bottom: 35px; }
+  .contenedorCentral h1 {
+    margin-left: 250px;
+    font-weight: 700;
+    font-size: 2.5rem; }
+  .contenedorCentral p {
+    margin-left: 250px; }
+  .contenedorCentral h2 {
+    margin-left: 250px;
+    font-weight: 400;
+    font-size: 3.7rem; }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    margin-left: 25px !important; }
+  h2 {
+    margin-left: 25px !important; }
+  p {
+    margin-left: 25px !important; } }
+
+.contenedorTexto {
+  margin-top: 40px;
+  margin-left: 260px;
+  margin-right: 600px; }
+
+.sectionB__contenedorLista {
+  margin-left: 660px;
+  margin-right: 650px; }
+
+.contenedorPrincipal {
+  margin-left: 250px;
+  margin-right: 200px;
+  margin-top: 220px;
+  margin-bottom: 282px; }
+  .contenedorPrincipal h2 {
+    line-height: 1.5;
+    font-weight: 375;
+    font-size: 3rem !important; }
+  .contenedorPrincipal h1 {
+    font-weight: 700; }
+
+@media only screen and (max-width: 768px) {
+  .contenedorPrincipal {
+    margin-left: 50px; } }
+
+.proyectos {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between; }
+
+.proyectos__proyectoInfo {
+  margin-left: 250px;
+  margin-right: 50px; }
+
+.proyectos__proyectoFoto {
+  margin-right: 250px; }
+  .proyectos__proyectoFoto img {
+    width: 700px;
+    margin-bottom: 35px; }
+
+.proyectos__proyectoFoto2 img {
+  width: 450px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.proyectos__proyectoFoto3 img {
+  width: 250px;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+
+.proyectos__proyectoFoto3 {
+  margin-right: 300px; }
+
+/* ABOUT CSS GRIDS */
+.grids {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 350px 350px 800px auto;
+  grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e"; }
+
+.header {
+  grid-area: a; }
+
+.main {
+  grid-area: b; }
+
+.sectionA {
+  grid-area: c; }
+
+.sectionB {
+  grid-area: d; }
+
+.footer {
+  grid-area: e; }
+
+.contenedorHome {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1rem;
+  grid-template-areas: "a a a" "b b b" "c c c"; }
+
+.headerHome {
+  grid-area: a; }
+
+.contenedorPrincipal__mainHome {
+  grid-area: b; }
+
+.footerHome {
+  grid-area: c; }
+
+@media only screen and (max-width: 375px) {
+  .header {
+    width: 100vw;
+    text-align: center; }
+  .footer {
+    width: 100vw; } }
+
+@media only screen and (max-width: 768px) {
+  .headerHome {
+    width: 100vw; }
+  .footerHome {
+    width: 100vw; } }
+
+/* BOOTSTRAP CARRUSEL */
+.carousel {
+  width: 350px;
+  height: 450px;
+  display: flex;
+  justify-content: space-around; }
+
+.carousel-item {
+  width: 350px; }
+
+/* MIXINS */
+.formulario {
+  margin-left: 740px;
+  margin-right: 500px; }
+
+.sectionA__box {
+  height: 330px;
+  width: 210px; }
+
+/* CONDICIONAL */
+h1 {
+  color: orangered; }
