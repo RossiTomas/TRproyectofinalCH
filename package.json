@@ -14,5 +14,13 @@
     "nodemon": "^2.0.9"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RossiTomas/TRproyectofinalCH.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RossiTomas/TRproyectofinalCH/issues"
+  },
+  "homepage": "https://github.com/RossiTomas/TRproyectofinalCH#readme",
   "description": ""
 }
