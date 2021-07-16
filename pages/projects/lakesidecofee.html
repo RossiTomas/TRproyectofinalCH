@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,54 +18,62 @@
     <title>Tomás Rossi. Lakeside Cofee</title>
 </head>
 
-<body>
+<body class="g1">
     <!--SECTION 1-->
-    <header class="header">
-        <div class="contenedor header__logonavContenedor">
-            <a href="../../../PROYECTO FINAL PÁGINA PORTFOLIO/index.html" id="arriba" class="logo">Tomás Rossi</a>
-            <nav class="navegacion">
-                <ul class="nav">
-                    <li>
-                        <a href="../../../PROYECTO FINAL PÁGINA PORTFOLIO/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="../../pages/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="../../pages/projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="../../pages/contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header class="header hh1">
+        <div class="contenedor">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand d-inline-block align-top" href="../../index.html" id="logo">Tomás Rossi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+
+                    <ul class="navbar-nav ms-auto">
+                        <li>
+                            <a class="nav-link" href="../../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../../pages/about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../../pages/projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../../pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
     <!--SECTION 2-->
-    <main class="contenedorCentral animate__animated animate__fadeInRight">
+    <main class="contenedorCentral m1 animate__animated animate__fadeInRight">
         <p class="titulares">Lakeside Cofee</p>
-        <h2 class="whiteText">Cafetería artesanal & takeaway</h2>
+        <h2 class="whiteText">Gourmet Coffee Shop.</h2>
     </main>
     <!--SECTION 3-->
-    <section class="proyectos animate__animated animate__fadeIn">
+    <section class="p1 animate__animated animate__fadeIn">
         <div class="proyectos__proyectoInfo">
             <h3 class="titulares">Cofee Shop</h3> <br>
-            <p class="whiteText">Diseño y desarrollo web de un sitio sobre el café, exponiendo recetas y métodos de
-                preparación. <br> <br> El
-                trabajo se realizó con
-                HTML5 creando una sección de ventas, blog con novedades y formulario de contacto para la compra de un
-                inmueble. <br> <br> Se añadió Css al proyecto en conjunto con mediaqueries para su adaptabilidad y
-                diseño
-                responsive en cualquier dispositivo.</p>
+            <p class="whiteText">Web design and development for a coffee shop and blog about coffee hobby, including
+                recipes and preparation methods. <br> <br>
+                The work and be found uploaded to GitHub, and it gathers all of the SEO methods necessary and its
+                optimized for all devices.
+            </p>
         </div>
-        <aside class="proyectos__proyectoFoto3">
+    </section>
+    <section>
+        <aside class="proyectos__proyectoFoto3 a1">
             <img src="../../img/blog1.jpg" alt="blog 1">
             <img src="../../img/blog2.jpg" alt="blog 2">
             <img src="../../img/blog3.jpg" alt="blog 3">
         </aside>
     </section>
     <!--SECTION 4-->
-    <footer class="footer has-text-right">
+    <footer class="footer f1 has-text-right">
         <div class="contenedor">
             <nav class="navegacion">
                 <ul>
@@ -83,6 +93,23 @@
             </nav>
         </div>
     </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

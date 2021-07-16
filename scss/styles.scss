@@ -13,7 +13,7 @@
     src: local("Harabara"), url("https://fonts.cdnfonts.com/s/8571/Harabara.woff") format("woff");
 }
 
-.logo {
+#logo {
     font-family: "Harabara", sans-serif;
     font-size: 18px !important;
     letter-spacing: 1px;
@@ -53,7 +53,6 @@ form {
 .whiteText,
 h5 {
     color: white;
-    margin: 10px 10px;
 }
 
 .centerText {
@@ -96,29 +95,23 @@ main {
 
 /* HEADER Y CONTENEDORES */
 
-.contenedor {
-    width: 95%;
-    max-width: 1700px;
-    margin: 0 auto;
-}
-
 .header {
     background-color: #0f1108;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     a {
         color: white;
         text-decoration: none;
     }
     ul li a:hover {
-        color: tomato;
-        opacity: 1;
+        color: tomato !important;
+        opacity: 1 !important;
     }
 }
 
-.header__logonavContenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contenedor {
+    width: 95%;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 .navegacion ul {
@@ -129,7 +122,6 @@ main {
         display: inline-block;
         opacity: 0.7;
         margin-left: 1rem;
-        
     }
     ul li a {
         display: block;
@@ -149,15 +141,12 @@ main {
     a {
         text-decoration: none;
     }
-
 }
-
 
 .footer {
     padding: 1.3rem 0;
     background-color: #191919;
 }
-
 
 .has-text-right {
     text-align: right !important;
@@ -197,20 +186,8 @@ main {
         min-width: 100%;
         max-width: 100%;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .formulario {
-        width: 300px;
-        margin-left: 15px !important;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
-    .formulario {
-        width: 400px;
-        margin-left: 160px !important;
-        margin-bottom: 200px !important;
+    label {
+        margin-top: 10px;
     }
 }
 
@@ -223,29 +200,44 @@ main {
 
 /* CAJAS SECCION PROYECTOS */
 
-
 .cajaInfo {
     background-color: #0f1108;
 }
 
+.card_style {
+    border: none !important;
+    background-color: #fefefe !important;
+    margin-bottom: 10px;
+    h5 {
+        text-align: center !important;
+        color: tomato !important;
+        font-size: 1.5rem !important;
+    }
+    p {
+        text-align: center !important;
+    }
+}
+.card-body h5 {
+    margin-top: 25px;
+}
+.cardCont {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
 
-
-
-.sectionA__box {
-    background-color: rgb(214, 212, 212);
-    border: solid rgb(214, 212, 212) 0.8px;
-    height: 330px;
-    width: 210px;
-    padding: 20px;
-    display: block;
-    border-radius: 10px;
-    margin-right: 25px;
-    margin-bottom: 2rem;
-    img {
-        margin-left: 6px;
+.Skills {
+    background-color: tomato;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    h3 {
+        font-size: 2rem;
     }
 }
 
+.textTomato {
+    color: tomato;
+}
 
 .sectionA {
     background-color: #e94f37;
@@ -256,12 +248,11 @@ main {
 }
 .sectionB h2 {
     color: tomato;
-    margin-top: 230px;
+    margin-top: 2rem;
 }
 .sectionB ul li {
-        margin-top: 30px;
-    }
-
+    margin-top: 30px;
+}
 
 .contenedorCentral {
     margin-right: 200px;
@@ -282,19 +273,6 @@ main {
     }
 }
 
-
-@media only screen and (max-width: 768px) {
-    h1 {
-        margin-left: 25px !important;
-    }
-    h2 {
-        margin-left: 25px !important;
-    }
-    p {
-        margin-left: 25px !important;
-    }
-}
-
 .contenedorTexto {
     margin-top: 40px;
     margin-left: 260px;
@@ -304,6 +282,9 @@ main {
 .sectionB__contenedorLista {
     margin-left: 660px;
     margin-right: 650px;
+    li i {
+        margin-right: 8px !important;
+    }
 }
 
 .contenedorPrincipal {
@@ -314,40 +295,33 @@ main {
     h2 {
         line-height: 1.5;
         font-weight: 375;
-        font-size: 3rem ;
+        font-size: 3rem;
         color: white !important;
     }
     h1 {
         font-weight: 700;
     }
-    
 }
 
 
-.proyectos {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-}
 
 .proyectos__proyectoInfo {
-    margin-left: 250px;
-    margin-right: 50px;
+    margin-left: 200px;
 }
 
 .proyectos__proyectoFoto {
-    margin-right: 250px;
     img {
-        width: 700px;
+        width: 600px;
         margin-bottom: 35px;
     }
 }
 
 .proyectos__proyectoFoto2 img {
-    width: 450px;
+    width: 400px;
     margin-left: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-right: 50px;
 }
 
 .proyectos__proyectoFoto3 img {
@@ -360,60 +334,6 @@ main {
     margin-right: 300px;
 }
 
-/* ABOUT CSS GRIDS */
-
-.grids {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto 350px 350px 800px auto;
-    grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e";
-}
-
-.header {
-    grid-area: a;
-}
-
-.main {
-    grid-area: b;
-}
-
-.sectionA {
-    grid-area: c;
-}
-
-.sectionB {
-    grid-area: d;
-}
-
-.footer {
-    grid-area: e;
-}
-
-.contenedorHome {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-gap: 1rem;
-    grid-template-areas: "a a a" "b b b" "c c c";
-}
-
-.headerHome {
-    grid-area: a;
-}
-
-.contenedorPrincipal__mainHome {
-    grid-area: b;
-}
-
-.footerHome {
-    grid-area: c;
-}
-
-.footerHome {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 
 /* BOOTSTRAP CARRUSEL */
 .carousel {
@@ -459,8 +379,6 @@ h1 {
 
 /* CARDS PROYECTO */
 
-
-
 .card {
     margin-top: 75px;
     margin-bottom: 75px;
@@ -486,15 +404,16 @@ h1 {
         margin-bottom: 20px;
     }
     a:hover {
-        opacity: 1; }
+        opacity: 1;
+    }
     a {
         text-decoration: none;
         color: white;
         opacity: 0.4;
         font-weight: bold;
         margin-left: 5px;
-        margin-top: 20px; }
-    
+        margin-top: 20px;
+    }
 }
 
 
@@ -506,22 +425,108 @@ h1 {
     margin-bottom: 100px;
 }
 
+/* Responsive seccion proyectos GRIDS */ 
+.g1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "hh1 hh1" "m1 m1" "p1 a1" "f1 f1";
+}
+
+.hh1 {
+    grid-area: hh1;
+}
+
+.m1 {
+    grid-area: m1;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.a1 {
+    grid-template-areas: a1;
+}
+
+.f1 {
+    grid-area: f1;
+}
 
 @media only screen and (max-width: 768px) {
-    .cardContainer
- {
-     display: flex;
-     flex-direction: column !important;
- }
-}
-@media only screen and (max-width: 768px) {
-    .card {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-    margin-left: 12px!important;
-    margin-right: 10px !important;
+    .g1 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "hh1" "m1" "p1" "a1" "f1";
+    }
+    .proyectos__proyectoInfo {
+        margin-left: 1px !important;
+        margin-right: 30px !important;
+            text-align: center;
+    }
+    .proyectos__proyectoFoto img {
+        margin-left: 10%;
+    }
+    .proyectos__proyectoFoto2 img {
+        margin-left: 20%;
+    }
+    .proyectos__proyectoFoto3 img {
+        width: 220px;
+    }
+    .proyectos__proyectoFoto3 {
+        margin-left: 1rem;
     }
 }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .proyectos__proyectoFoto3 img {
+        width: 300px;
+        margin-left: 45%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .proyectos__proyectoFoto img {
+        width: 300px;
+    }
+    .proyectos__proyectoFoto2 img {
+        width: 300px;
+        margin-left: 10% !important;
+    }
+    .proyectos__proyectoFoto3 img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cardContainer {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .card {
+        width: 90% !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    .card img {
+        margin-left: 5% !important;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .card {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        margin-left: 13rem !important;
+    }
+    .card img {
+        margin-left: 6.5% !important;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 1.5rem !important;
@@ -557,5 +562,100 @@ h1 {
     }
     .footerHome {
         width: 100vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .formulario {
+        width: 300px;
+        margin-left: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .formulario {
+        width: 400px;
+        margin-left: 180px !important;
+        margin-bottom: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        margin-left: 25px !important;
+    }
+    h2 {
+        margin-left: 25px !important;
+    }
+    p {
+        margin-left: 25px !important;
+    }
+    h6 {
+        text-align: center !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contenedorTexto {
+        width: 20rem !important;
+        height: 350px;
+        margin-bottom: 10rem;
+    }
+    .sectionB__contenedorLista {
+        width: 20rem !important;
+        margin-bottom: 10rem;
+        margin-left: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cardCont {
+        flex-direction: column;
+    }
+    .Skills {
+        width: 100% important;
+    }
+    .cardCont {
+        margin-top: 1rem;
+        align-items: center;
+    }
+    .card img {
+        margin-left: 5% !important;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .cardCont {
+        align-items: center !important;
+        img {
+            margin-left: 7.5% !important;
+        }
+    }
+    .card img {
+        margin-left: 7% !important;
+    }
+}
+
+@media only screen and (min-width: 480px) { 
+    .footerHome {
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .card_style {
+        margin-left: 10px !important;
+    }
+    .contenedorTexto {
+        width: 600px;
+    }
+    .sectionB__contenedorLista {
+        width: 600px !important;
+        margin-left: 80px !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .card_style img {
+        margin-left: 3% !important;
     }
 }

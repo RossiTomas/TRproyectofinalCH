@@ -2,133 +2,166 @@
 <html lang="en">
 
 <head>
-    <meta name="description" content="Conoce más sobre mí, mis motivaciones y las tecnologías que utilizo">
-    <meta name="keywords" content="HTML, CSS, JavaScript, AdobeXD, historia, motivaciones, aprendizaje">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Tomás Rossi. About Me</title>
+  <meta name="description" content="Conoce más sobre mí, mis motivaciones y las tecnologías que utilizo">
+  <meta name="keywords" content="HTML, CSS, JavaScript, AdobeXD, historia, motivaciones, aprendizaje">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Tomás Rossi. About Me</title>
 </head>
 
-<body class="grids">
-    <!--SECTION 1-->
-    <header class="header">
-        <div class="contenedor header__logonavContenedor">
-            <a href="/index.html" id="arriba" class="logo">Tomás Rossi</a>
-            <nav class="navegacion">
-                <ul class="nav">
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+<body>
+  <!--SECTION 1-->
+  <header class="header">
+    <div class="contenedor">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand d-inline-block align-top" href="../index.html" id="logo">Tomás Rossi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+
+          <ul class="navbar-nav ms-auto">
+            <li>
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-    </header>
-    <!--SECTION 2-->
-    <main class="main  animate__animated animate__fadeInLeft">
-        <div class="contenedorCentral">
-            <h1 class="titulares">Who?</h1>
-            <h2 class="whiteText">Where I'm at.</h2>
-        </div>
-        <p class="whiteText contenedorTexto">Nacido y criado en Argentina, viviendo alrededor del país. Como un
-            chico de los
-            tardíos
-            90s
-            crecí jugando videojuegos y leyendo libros de fantasía en el garage de mi casa. Actualmente
-            estudio la carrera Ciencias de la Antropología en la Universidad de Buenos Aires mientras
-            me preparo como Desarrollador y Diseñador web. Mi objetivo desde 2021 en adelante es
-            mejorar y perfeccionar mis habilidades y convertirme en un partícipe activo del área del
-            desarrollo web, trabajando con compañeros, aprendiendo y contribuyendo a este
-            maravilloso mundo que me apasiona.</p>
-    </main>
-    <!--SECTION 3-->
-    <div class="sectionA  animate__animated animate__fadeInUp">
-        <section>
-            <h2 class="whiteText centerText">What I do</h3>
-            <div class="sectionA__contenedorCajas">
-                <div class="sectionA__box">
-                    <img alt="HTML" width="200px"
-                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGNTcyMjsiIHBvaW50cz0iMzIsMCA3Mi44LDQ2MC44IDI1Niw1MTIgNDM5LjEzNiw0NjAuODMyIDQ4MCwwICIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZBRkFGQTsiIHBvaW50cz0iMzkxLjUyLDE1MC42ODggMjU2LDE1MC42ODggMTc2LjgsMTUwLjY4OCAxODEuOTIsMjA4LjU3NiAyNTYsMjA4LjU3NiAzODYuNCwyMDguNTc2IA0KCTM3MS4wMDgsMzgyLjE0NCAyNTYsNDE0LjI0IDI1NS45MDQsNDE0LjI3MiAxNDAuOTYsMzgyLjE0NCAxMzIuOTI4LDI5MS4zNiAxODkuMjQ4LDI5MS4zNiAxOTMuNDQsMzM4LjQ2NCAyNTUuOTM2LDM1NS40NTYgDQoJMjU2LDM1NS40MjQgMjU2LDM1NS40MjQgMzE4LjU2LDMzOC40MzIgMzI1LjA4OCwyNjUuMTIgMjU2LDI2NS4xMiAyNTYsMjY1LjEyIDEzMC42MjQsMjY1LjEyIDExNS40NTYsOTQuMjA4IDI1Niw5NC4yMDggDQoJMzk2LjUxMiw5NC4yMDggIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
-                    <h3>HTML5</h3>
-                    <p>HyperText Markup Language</p>
-                </div>
-                <div class="sectionA__box">
-                    <img alt="CSS" width="200px"
-                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzIxOTZGMzsiIHBvaW50cz0iMzIsMCA3Mi44LDQ2MC44IDI1Niw1MTIgNDM5LjEzNiw0NjAuODMyIDQ4MCwwICIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZBRkFGQTsiIHBvaW50cz0iMzkyLjc2OCwxNTAuNjg4IDM4Ny42MTYsMjA4LjU3NiAzNzIuMDY0LDM4Mi4xMTIgMjU2LDQxNC4yMDggMjU1LjkwNCw0MTQuMjQgDQoJMTM5LjkwNCwzODIuMTEyIDEzMS44MDgsMjkxLjM2IDE4OC42NCwyOTEuMzYgMTkyLjg2NCwzMzguNDMyIDI1NS45MzYsMzU1LjQ1NiAyNTUuOTY4LDM1NS40MjQgMzE5LjEzNiwzMzguNCAzMjcuNzQ0LDI1OS45NjggDQoJMTI5LjA4OCwyNjAuNTEyIDEyMy40NTYsMjA2Ljg4IDMzMi41MTIsMjA0LjQxNiAzMzYuNzM2LDE0Ny4wMDggMTE3Ljg1NiwxNDcuNjE2IDExNC4xNzYsOTQuMjA4IDI1Niw5NC4yMDggMzk3LjgyNCw5NC4yMDggIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
-                    <h3>CSS</h3>
-                    <p>Cascade Styles Sheets</p>
-                </div>
-                <div class="sectionA__box">
-                    <img alt="JavaScript" width="200px"
-                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0U0QkE0MjsiIGQ9Ik01MTIsMjU2YzAsMzMuMzUzLTYuMzc0LDY1LjIxMi0xNy45ODMsOTQuNDM4Yy02LjIwNywxNS42MzItMTMuOTA4LDMwLjUxMS0yMi45MzYsNDQuNDUNCgljLTExLjI0MywxNy4zODctMjQuNTQ1LDMzLjMyMi0zOS41NDksNDcuNDQ5Yy04Ljc4OCw4LjI4Ni0xOC4xNSwxNS45NDUtMjguMDM1LDIyLjkyNUMzNjEuODA2LDQ5NC43MDcsMzEwLjkzLDUxMiwyNTYsNTEyDQoJcy0xMDUuODA2LTE3LjI5My0xNDcuNDk4LTQ2LjczOGMtMTIuMzcyLTguNzM1LTIzLjkyOC0xOC41MjYtMzQuNTM0LTI5LjI2OEMyOC4yMzMsMzg5Ljc1NywwLDMyNi4xNjUsMCwyNTYNCglTMjguMjMzLDEyMi4yNDMsNzMuOTY4LDc2LjAwNmMxMS4yMzMtMTEuMzY4LDIzLjUzMS0yMS42ODIsMzYuNzI4LTMwLjc5M0MxNTEuOTcsMTYuNjk3LDIwMi4wMzEsMCwyNTYsMA0KCXMxMDQuMDMsMTYuNjk3LDE0NS4zMDQsNDUuMjEzYzEwLjA4Myw2Ljk0OSwxOS42MzQsMTQuNjE4LDI4LjU4OCwyMi45MjVjMTUuNjg0LDE0LjUwMywyOS41MzksMzAuOTYsNDEuMTksNDguOTc0DQoJYzkuMDI4LDEzLjkzOSwxNi43MjksMjguODE4LDIyLjkzNiw0NC40NUM1MDUuNjI2LDE5MC43ODgsNTEyLDIyMi42NDcsNTEyLDI1NnoiLz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGMkYyRjI7IiBkPSJNMzkxLjA1LDIzMi45N2MtNy4xMjUtMjAuNjY0LTM2LjM0MS0yMC42NjQtNDIuMDQtMy41NjNjLTUuNywxNy4xMDEsMTMuNTM5LDI3LjA3Niw0My40NjYsMzcuMDUzDQoJCWMyOS45MjcsOS45NzYsNDguNDU0LDM2LjM0MSw0NC44OTEsNTkuODU0cy0xMy41MzksNTQuMTU0LTcyLjY4LDU0LjE1NGMtMzYuOTYzLDAtNTcuNTA1LTIzLjEwMy02Ny43MTQtNDAuNDI5bDMzLjUxMS0yMC4xMzgNCgkJYzAsMCwxMS40MDEsMjQuMjI3LDMyLjc3NywyNC4yMjdjMjEuMzc3LDAsMjkuOTI3LTcuMTI1LDI5LjkyNy0yMy41MTRjMC0xOS45NTEtNjkuMTE4LTI3LjA3Ni03OS44MDYtNjEuMjc5DQoJCXMzLjU2My04Mi42NTYsNTMuNDQxLTc5LjA5NGMzMS4xNzUsMi4yMjcsNDguNzEsMTcuNTM1LDU3LjQ3OCwyOC43MDNMMzkxLjA1LDIzMi45N3oiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRjJGMkYyOyIgZD0iTTIzNS43MTQsMTgzLjgwNWMwLDAsMCwxMjAuNDIxLDAsMTM2LjgxYzAsMTYuMzg4LTE0LjI1MSwyNC45NC0yOC41MDIsMjIuMDg5DQoJCWMtMTQuMjUxLTIuODUtMjAuNjY0LTE5Ljk1MS0yMC42NjQtMTkuOTUxbC0zMi43NzcsMjIuMDg5YzAsMCw3LjEyNSwzMi43NzcsNTIuMDE2LDM1LjYyOA0KCQljNDQuODkxLDIuODUsNzAuNTQyLTI0LjIyNyw3MC41NDItNDcuMDI5czAtMTQ5LjYzNiwwLTE0OS42MzZMMjM1LjcxNCwxODMuODA1TDIzNS43MTQsMTgzLjgwNXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRjJGMkYyOyIgZD0iTTczLjk2OCw0NS4yMTN2MzkwLjc4MWMxMC42MDYsMTAuNzQyLDIyLjE2MiwyMC41MzIsMzQuNTM0LDI5LjI2OGgyOTQuOTk2DQoJCWM5Ljg4NS02Ljk4LDE5LjI0Ny0xNC42MzksMjguMDM1LTIyLjkyNUg5Ni44OTNWNjguMTM4aDM3NC4xODh2MzI2Ljc1YzkuMDI4LTEzLjkzOSwxNi43MjktMjguODE4LDIyLjkzNi00NC40NVY0NS4yMTNINzMuOTY4eiIvPg0KPC9nPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojM0Y0QTQzOyIgY3g9Ijg3Ljg1NSIgY3k9IjMzOS4xNDMiIHI9IjQwLjYxNSIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
-                    <h3>JavaScript</h3>
-                    <p>Knowledgeable in ES5, ES6 and Typescript</p>
-                </div>
-                <div class="sectionA__box">
-                    <img alt="ADOBEXD" width="200px"
-                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGODBFNDsiIGQ9Ik01MTIsNTEySDBWMGg1MTJWNTEyeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGNUFENDsiIGQ9Ik01MTIsNTEySDI1NlYwaDI1NlY1MTJ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojN0YxMzYzOyIgZD0iTTQ4Miw0ODJIMzBWMzBoNDUyVjQ4MnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiM2NjEwNTQ7IiBkPSJNNDgyLDQ4MkgyNTZWMzBoMjI2VjQ4MnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRjgwRTQ7IiBkPSJNMTQ2LjQ2MSwxODEuNmw0Mi40OCw2My4zNmw0Mi4yNC02My4zNmgzNS43NmwtNjAuNzIsODYuNGw1OC44LDg0aC0zNS43NmwtNDAuMzItNjAuOTZMMTQ4LjM4MiwzNTINCgloLTM2bDU4LjgtODRsLTYwLjcyMS04Ni40SDE0Ni40NjF6Ii8+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkY1QUQ0OyIgZD0iTTMyNS43NDEsMzU0LjRjLTM2LjkyMiwwLTU5Ljc2MS0zMC43NzUtNTkuNzYxLTY1LjI4YzAtMzkuMTIsMjYuMzM5LTY1LjA0LDU2LjE2LTY1LjA0DQoJCWMyNS4yNjIsMCwzOC4zMTcsMTcuMDQsNDIuNDc5LDI0LjI0VjE3Ni44aDMyLjE2djEzOC4yNGMwLDMuMzYsNC43MTgsOS40NDIsNy40NCw5LjZWMzUyYy01LjYwMywxLjExOC0xMC4xNjMsMS42OC0xMy42ODEsMS42OA0KCQljLTIzLjIyMSwwLTIxLjExOS0yMy41Mi0yMS4xMTktMjMuNTJDMzY0Ljc3OCwzMzguMTYzLDM1MC45NDQsMzU0LjQsMzI1Ljc0MSwzNTQuNHogTTMzNC4xNDEsMzI3LjA0DQoJCWMyMC4xNzksMCwyOS4zNTgtMTguMDc5LDMwLjQ3OS0yMS4xMnYtMzBjLTEuMjgyLTMuNTE4LTEyLjgwMS0yNC40OC0zMi4zOTktMjQuNDhjLTIxLjkwMSwwLTMyLjg4LDIxLjcyNy0zMi44OCwzOC40DQoJCUMyOTkuMzQxLDMwOC4xNjcsMzEyLjgxOSwzMjcuMDQsMzM0LjE0MSwzMjcuMDR6Ii8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGNUFENDsiIHBvaW50cz0iMjU2LDE4MS42IDI1NiwxOTcuMTY5IDI2Ni45NDEsMTgxLjYgCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGRjVBRDQ7IiBwb2ludHM9IjI1NiwzNTIgMjY1LjAyMSwzNTIgMjU2LDMzOS4xMTIgCSIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
-                    <h3>Adobe XD</h3>
-                    <p>Up to date with the latest update for designers</p>
-                </div>
-            </div>
-        </section>
+      </nav>
     </div>
-    <section class="sectionB  animate__animated animate__fadeInUp">
-        <h2 class="centerText">What i believe in</h2>
-        <div class="sectionB__contenedorLista">
-            <ul>
-                <li class="whiteText"> <i>Ganas de aprender:</i> Estudiante autodidacta en todo lo que hago, mis herramientas son los
-                    libros, udemy, coderhouse, y cualquier fuente de la que pueda aprender </li>
-                <li class="whiteText"> <i>Etica de trabajo:</i> Me esfuerzo por mantenerme enfocado, en comunicarme y hacer todas las
-                    preguntas que hagan falta. Esto viene de mi hábito de investigar y sacarme las dudas antes de
-                    hacer
-                    algo... </li>
-                <li class="whiteText"> <i>Balance entre vida y tabajo:</i> Es importante desconectarme y tener un momento para mi
-                    mismo.
-                    Suelo hacerlo con un buen libro o con algunas de mis películas favoritas, como El señor de los
-                    anillos. </li>
-                <li class="whiteText"> <i>Creatividad:</i> Mi segunda pasión, además del desarrollo web es la fotografía. Puedes
-                    encontrar
-                    mis tomas de fotografía callejera en mi instagram. </li>
-            </ul>
+  </header>
+  <!--SECTION 2-->
+  <main class="main  animate__animated animate__fadeInLeft">
+    <div class="contenedorCentral">
+      <h1 class="titulares">Who?</h1>
+      <h2 class="whiteText">Where I'm at.</h2>
+    </div>
+    <p class="whiteText contenedorTexto">Born and raised all across Argentina I grew up in the late 90s playing
+      videogames and reading fantasy fiction in my parent’s garage. I’m currently doing a major in Anthropology at the
+      Universidad de Buenos Aires while also developing as a web developer. My goals beyond 2021 are bettering and
+      perfecting my skills and becoming an active member of the programming community, working with my fellow
+      developers, learning and contributing to this wonderful world that fascinates me.</p>
+  </main>
+  <!--SECTION 3-->
+  <section class="Skills animate__animated animate__fadeInUp">
+    <h3 class="whiteText text-center">What I do </h3>
+
+    <div class="cardCont">
+      <div class="card card_style" style="width: 18rem;">
+        <img alt="CSS" width="200px"
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzIxOTZGMzsiIHBvaW50cz0iMzIsMCA3Mi44LDQ2MC44IDI1Niw1MTIgNDM5LjEzNiw0NjAuODMyIDQ4MCwwICIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZBRkFGQTsiIHBvaW50cz0iMzkyLjc2OCwxNTAuNjg4IDM4Ny42MTYsMjA4LjU3NiAzNzIuMDY0LDM4Mi4xMTIgMjU2LDQxNC4yMDggMjU1LjkwNCw0MTQuMjQgDQoJMTM5LjkwNCwzODIuMTEyIDEzMS44MDgsMjkxLjM2IDE4OC42NCwyOTEuMzYgMTkyLjg2NCwzMzguNDMyIDI1NS45MzYsMzU1LjQ1NiAyNTUuOTY4LDM1NS40MjQgMzE5LjEzNiwzMzguNCAzMjcuNzQ0LDI1OS45NjggDQoJMTI5LjA4OCwyNjAuNTEyIDEyMy40NTYsMjA2Ljg4IDMzMi41MTIsMjA0LjQxNiAzMzYuNzM2LDE0Ny4wMDggMTE3Ljg1NiwxNDcuNjE2IDExNC4xNzYsOTQuMjA4IDI1Niw5NC4yMDggMzk3LjgyNCw5NC4yMDggIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+
+        <div class="card-body">
+          <h5 class="card-title text-center">CSS</h5>
+          <h6 class="card-text text-center">Cascade Style Sheets.</h6>
         </div>
-    </section>
-    <!--SECTION 4-->
-    <footer class="footer has-text-right">
-        <div class="contenedor">
-            <nav class="navegacion">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/tomas-rossi-378574208/"><img alt="LinkedIn"
-                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTE2MC4wMDc4MTIgNDIzaC03MHYtMjI2aDcwem02Ljk4NDM3Ni0yOTguMDAzOTA2YzAtMjIuNjI4OTA2LTE4LjM1OTM3Ni00MC45OTYwOTQtNDAuOTc2NTYzLTQwLjk5NjA5NC0yMi43MDMxMjUgMC00MS4wMTU2MjUgMTguMzY3MTg4LTQxLjAxNTYyNSA0MC45OTYwOTQgMCAyMi42MzY3MTggMTguMzEyNSA0MS4wMDM5MDYgNDEuMDE1NjI1IDQxLjAwMzkwNiAyMi42MTcxODcgMCA0MC45NzY1NjMtMTguMzY3MTg4IDQwLjk3NjU2My00MS4wMDM5MDZ6bTI1NS4wMDc4MTIgMTczLjY2Nzk2OGMwLTYwLjY2Nzk2OC0xMi44MTY0MDYtMTA1LjY2NDA2Mi04My42ODc1LTEwNS42NjQwNjItMzQuMDU0Njg4IDAtNTYuOTE0MDYyIDE3LjAzMTI1LTY2LjI0NjA5NCAzNC43NDIxODhoLS4wNjY0MDZ2LTMwLjc0MjE4OGgtNjh2MjI2aDY4di0xMTIuMjEwOTM4YzAtMjkuMzg2NzE4IDcuNDgwNDY5LTU3Ljg1NTQ2OCA0My45MDYyNS01Ny44NTU0NjggMzUuOTI5Njg4IDAgMzcuMDkzNzUgMzMuNjA1NDY4IDM3LjA5Mzc1IDU5LjcyMjY1NnYxMTAuMzQzNzVoNjl6bTkwIDE1My4zMzU5Mzh2LTM5MmMwLTMzLjA4NTkzOC0yNi45MTQwNjItNjAtNjAtNjBoLTM5MmMtMzMuMDg1OTM4IDAtNjAgMjYuOTE0MDYyLTYwIDYwdjM5MmMwIDMzLjA4NTkzOCAyNi45MTQwNjIgNjAgNjAgNjBoMzkyYzMzLjA4NTkzOCAwIDYwLTI2LjkxNDA2MiA2MC02MHptLTYwLTQxMmMxMS4wMjczNDQgMCAyMCA4Ljk3MjY1NiAyMCAyMHYzOTJjMCAxMS4wMjczNDQtOC45NzI2NTYgMjAtMjAgMjBoLTM5MmMtMTEuMDI3MzQ0IDAtMjAtOC45NzI2NTYtMjAtMjB2LTM5MmMwLTExLjAyNzM0NCA4Ljk3MjY1Ni0yMCAyMC0yMHptMCAwIiBmaWxsPSIjZTdlN2U3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />
-                    </li>
-                    <li>
-                        <a href="https://github.com/vendechevis"><img alt="GitHub"
-                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTI1NS45NjgsNS4zMjlDMTE0LjYyNCw1LjMyOSwwLDEyMC40MDEsMCwyNjIuMzUzYzAsMTEzLjUzNiw3My4zNDQsMjA5Ljg1NiwxNzUuMTA0LDI0My44NzIgICAgYzEyLjgsMi4zNjgsMTcuNDcyLTUuNTY4LDE3LjQ3Mi0xMi4zODRjMC02LjExMi0wLjIyNC0yMi4yNzItMC4zNTItNDMuNzEyYy03MS4yLDE1LjUyLTg2LjI0LTM0LjQ2NC04Ni4yNC0zNC40NjQgICAgYy0xMS42MTYtMjkuNjk2LTI4LjQxNi0zNy42LTI4LjQxNi0zNy42Yy0yMy4yNjQtMTUuOTM2LDEuNzI4LTE1LjYxNiwxLjcyOC0xNS42MTZjMjUuNjk2LDEuODI0LDM5LjIsMjYuNDk2LDM5LjIsMjYuNDk2ICAgIGMyMi44NDgsMzkuMjY0LDU5LjkzNiwyNy45MzYsNzQuNTI4LDIxLjM0NGMyLjMwNC0xNi42MDgsOC45MjgtMjcuOTM2LDE2LjI1Ni0zNC4zNjggICAgYy01Ni44MzItNi40OTYtMTE2LjYwOC0yOC41NDQtMTE2LjYwOC0xMjcuMDA4YzAtMjguMDY0LDkuOTg0LTUxLjAwOCwyNi4zNjgtNjguOTkyYy0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQsMi40OTYtNjggICAgYzAsMCwyMS41MDQtNi45MTIsNzAuNCwyNi4zMzZjMjAuNDE2LTUuNjk2LDQyLjMwNC04LjU0NCw2NC4wOTYtOC42NGMyMS43MjgsMC4xMjgsNDMuNjQ4LDIuOTQ0LDY0LjA5Niw4LjY3MiAgICBjNDguODY0LTMzLjI0OCw3MC4zMzYtMjYuMzM2LDcwLjMzNi0yNi4zMzZjMTMuOTUyLDM1LjM5Miw1LjE4NCw2MS41MDQsMi41Niw2OGMxNi40MTYsMTcuOTg0LDI2LjMwNCw0MC45MjgsMjYuMzA0LDY4Ljk5MiAgICBjMCw5OC43Mi01OS44NCwxMjAuNDQ4LTExNi44NjQsMTI2LjgxNmM5LjE4NCw3LjkzNiwxNy4zNzYsMjMuNjE2LDE3LjM3Niw0Ny41ODRjMCwzNC4zNjgtMC4zMiw2Mi4wOC0wLjMyLDcwLjQ5NiAgICBjMCw2Ljg4LDQuNjA4LDE0Ljg4LDE3LjYsMTIuMzUyQzQzOC43Miw0NzIuMTQ1LDUxMiwzNzUuODU3LDUxMiwyNjIuMzUzQzUxMiwxMjAuNDAxLDM5Ny4zNzYsNS4zMjksMjU1Ljk2OCw1LjMyOXoiIGZpbGw9IiNlN2U3ZTciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/tomasrossia/"><img alt="Instagram"
-                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMSA1MTEuOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNTEwLjk0OTIxOSAxNTAuNWMtMS4xOTkyMTktMjcuMTk5MjE5LTUuNTk3NjU3LTQ1Ljg5ODQzOC0xMS44OTg0MzgtNjIuMTAxNTYyLTYuNS0xNy4xOTkyMTktMTYuNS0zMi41OTc2NTctMjkuNjAxNTYyLTQ1LjM5ODQzOC0xMi44MDA3ODEtMTMtMjguMzAwNzgxLTIzLjEwMTU2Mi00NS4zMDA3ODEtMjkuNS0xNi4yOTY4NzYtNi4zMDA3ODEtMzQuODk4NDM4LTEwLjY5OTIxOS02Mi4wOTc2NTctMTEuODk4NDM4LTI3LjQwMjM0My0xLjMwMDc4MS0zNi4xMDE1NjItMS42MDE1NjItMTA1LjYwMTU2Mi0xLjYwMTU2MnMtNzguMTk5MjE5LjMwMDc4MS0xMDUuNSAxLjVjLTI3LjE5OTIxOSAxLjE5OTIxOS00NS44OTg0MzggNS42MDE1NjItNjIuMDk3NjU3IDExLjg5ODQzOC0xNy4yMDMxMjQgNi41LTMyLjYwMTU2MiAxNi41LTQ1LjQwMjM0MyAyOS42MDE1NjItMTMgMTIuODAwNzgxLTIzLjA5NzY1NyAyOC4zMDA3ODEtMjkuNSA0NS4zMDA3ODEtNi4zMDA3ODEgMTYuMzAwNzgxLTEwLjY5OTIxOSAzNC44OTg0MzgtMTEuODk4NDM4IDYyLjA5NzY1Ny0xLjMwMDc4MSAyNy40MDIzNDMtMS42MDE1NjIgMzYuMTAxNTYyLTEuNjAxNTYyIDEwNS42MDE1NjJzLjMwMDc4MSA3OC4xOTkyMTkgMS41IDEwNS41YzEuMTk5MjE5IDI3LjE5OTIxOSA1LjYwMTU2MiA0NS44OTg0MzggMTEuOTAyMzQzIDYyLjEwMTU2MiA2LjUgMTcuMTk5MjE5IDE2LjU5NzY1NyAzMi41OTc2NTcgMjkuNTk3NjU3IDQ1LjM5ODQzOCAxMi44MDA3ODEgMTMgMjguMzAwNzgxIDIzLjEwMTU2MiA0NS4zMDA3ODEgMjkuNSAxNi4zMDA3ODEgNi4zMDA3ODEgMzQuODk4NDM4IDEwLjY5OTIxOSA2Mi4xMDE1NjIgMTEuODk4NDM4IDI3LjI5Njg3NiAxLjIwMzEyNCAzNiAxLjUgMTA1LjUgMS41czc4LjE5OTIxOS0uMjk2ODc2IDEwNS41LTEuNWMyNy4xOTkyMTktMS4xOTkyMTkgNDUuODk4NDM4LTUuNTk3NjU3IDYyLjA5NzY1Ny0xMS44OTg0MzggMzQuNDAyMzQzLTEzLjMwMDc4MSA2MS42MDE1NjItNDAuNSA3NC45MDIzNDMtNzQuODk4NDM4IDYuMjk2ODc2LTE2LjMwMDc4MSAxMC42OTkyMTktMzQuOTAyMzQzIDExLjg5ODQzOC02Mi4xMDE1NjIgMS4xOTkyMTktMjcuMzAwNzgxIDEuNS0zNiAxLjUtMTA1LjVzLS4xMDE1NjItNzguMTk5MjE5LTEuMzAwNzgxLTEwNS41em0tNDYuMDk3NjU3IDIwOWMtMS4xMDE1NjIgMjUtNS4zMDA3ODEgMzguNS04LjgwMDc4MSA0Ny41LTguNjAxNTYyIDIyLjMwMDc4MS0yNi4zMDA3ODEgNDAtNDguNjAxNTYyIDQ4LjYwMTU2Mi05IDMuNS0yMi41OTc2NTcgNy42OTkyMTktNDcuNSA4Ljc5Njg3Ni0yNyAxLjIwMzEyNC0zNS4wOTc2NTcgMS41LTEwMy4zOTg0MzggMS41cy03Ni41LS4yOTY4NzYtMTAzLjQwMjM0My0xLjVjLTI1LTEuMDk3NjU3LTM4LjUtNS4yOTY4NzYtNDcuNS04Ljc5Njg3Ni0xMS4wOTc2NTctNC4xMDE1NjItMjEuMTk5MjE5LTEwLjYwMTU2Mi0yOS4zOTg0MzgtMTkuMTAxNTYyLTguNS04LjMwMDc4MS0xNS0xOC4zMDA3ODEtMTkuMTAxNTYyLTI5LjM5ODQzOC0zLjUtOS03LjY5OTIxOS0yMi42MDE1NjItOC43OTY4NzYtNDcuNS0xLjIwMzEyNC0yNy0xLjUtMzUuMTAxNTYyLTEuNS0xMDMuNDAyMzQzcy4yOTY4NzYtNzYuNSAxLjUtMTAzLjM5ODQzOGMxLjA5NzY1Ny0yNSA1LjI5Njg3Ni0zOC41IDguNzk2ODc2LTQ3LjUgNC4xMDE1NjItMTEuMTAxNTYyIDEwLjYwMTU2Mi0yMS4xOTkyMTkgMTkuMjAzMTI0LTI5LjQwMjM0MyA4LjI5Njg3Ni04LjUgMTguMjk2ODc2LTE1IDI5LjM5ODQzOC0xOS4wOTc2NTcgOS0zLjUgMjIuNjAxNTYyLTcuNjk5MjE5IDQ3LjUtOC44MDA3ODEgMjctMS4xOTkyMTkgMzUuMTAxNTYyLTEuNSAxMDMuMzk4NDM4LTEuNSA2OC40MDIzNDMgMCA3Ni41LjMwMDc4MSAxMDMuNDAyMzQzIDEuNSAyNSAxLjEwMTU2MiAzOC41IDUuMzAwNzgxIDQ3LjUgOC44MDA3ODEgMTEuMDk3NjU3IDQuMDk3NjU3IDIxLjE5OTIxOSAxMC41OTc2NTcgMjkuMzk4NDM4IDE5LjA5NzY1NyA4LjUgOC4zMDA3ODEgMTUgMTguMzAwNzgxIDE5LjEwMTU2MiAyOS40MDIzNDMgMy41IDkgNy42OTkyMTkgMjIuNTk3NjU3IDguODAwNzgxIDQ3LjUgMS4xOTkyMTkgMjcgMS41IDM1LjA5NzY1NyAxLjUgMTAzLjM5ODQzOHMtLjMwMDc4MSA3Ni4zMDA3ODEtMS41IDEwMy4zMDA3ODF6bTAgMCIgZmlsbD0iI2U3ZTdlNyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1Ni40NDkyMTkgMTI0LjVjLTcyLjU5NzY1NyAwLTEzMS41IDU4Ljg5ODQzOC0xMzEuNSAxMzEuNXM1OC45MDIzNDMgMTMxLjUgMTMxLjUgMTMxLjVjNzIuNjAxNTYyIDAgMTMxLjUtNTguODk4NDM4IDEzMS41LTEzMS41cy01OC44OTg0MzgtMTMxLjUtMTMxLjUtMTMxLjV6bTAgMjE2LjgwMDc4MWMtNDcuMDk3NjU3IDAtODUuMzAwNzgxLTM4LjE5OTIxOS04NS4zMDA3ODEtODUuMzAwNzgxczM4LjIwMzEyNC04NS4zMDA3ODEgODUuMzAwNzgxLTg1LjMwMDc4MWM0Ny4xMDE1NjIgMCA4NS4zMDA3ODEgMzguMTk5MjE5IDg1LjMwMDc4MSA4NS4zMDA3ODFzLTM4LjE5OTIxOSA4NS4zMDA3ODEtODUuMzAwNzgxIDg1LjMwMDc4MXptMCAwIiBmaWxsPSIjZTdlN2U3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNDIzLjg1MTU2MiAxMTkuMzAwNzgxYzAgMTYuOTUzMTI1LTEzLjc0NjA5MyAzMC42OTkyMTktMzAuNzAzMTI0IDMwLjY5OTIxOS0xNi45NTMxMjYgMC0zMC42OTkyMTktMTMuNzQ2MDk0LTMwLjY5OTIxOS0zMC42OTkyMTkgMC0xNi45NTcwMzEgMTMuNzQ2MDkzLTMwLjY5OTIxOSAzMC42OTkyMTktMzAuNjk5MjE5IDE2Ljk1NzAzMSAwIDMwLjcwMzEyNCAxMy43NDIxODggMzAuNzAzMTI0IDMwLjY5OTIxOXptMCAwIiBmaWxsPSIjZTdlN2U3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />
-                    </li>
-                </ul>
-            </nav>
+      </div>
+
+      <div class="card card_style" style="width: 18rem;">
+        <img alt="HTML" width="200px"
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGNTcyMjsiIHBvaW50cz0iMzIsMCA3Mi44LDQ2MC44IDI1Niw1MTIgNDM5LjEzNiw0NjAuODMyIDQ4MCwwICIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZBRkFGQTsiIHBvaW50cz0iMzkxLjUyLDE1MC42ODggMjU2LDE1MC42ODggMTc2LjgsMTUwLjY4OCAxODEuOTIsMjA4LjU3NiAyNTYsMjA4LjU3NiAzODYuNCwyMDguNTc2IA0KCTM3MS4wMDgsMzgyLjE0NCAyNTYsNDE0LjI0IDI1NS45MDQsNDE0LjI3MiAxNDAuOTYsMzgyLjE0NCAxMzIuOTI4LDI5MS4zNiAxODkuMjQ4LDI5MS4zNiAxOTMuNDQsMzM4LjQ2NCAyNTUuOTM2LDM1NS40NTYgDQoJMjU2LDM1NS40MjQgMjU2LDM1NS40MjQgMzE4LjU2LDMzOC40MzIgMzI1LjA4OCwyNjUuMTIgMjU2LDI2NS4xMiAyNTYsMjY1LjEyIDEzMC42MjQsMjY1LjEyIDExNS40NTYsOTQuMjA4IDI1Niw5NC4yMDggDQoJMzk2LjUxMiw5NC4yMDggIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+
+        <div class="card-body">
+          <h5 class="card-title text-center">HTML</h5>
+          <h6 class="card-text text-center">HyperText markup language.</h6>
         </div>
-    </footer>
+      </div>
+
+      <div class="card card_style" style="width: 18rem;">
+        <img alt="JavaScript" width="200px"
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0U0QkE0MjsiIGQ9Ik01MTIsMjU2YzAsMzMuMzUzLTYuMzc0LDY1LjIxMi0xNy45ODMsOTQuNDM4Yy02LjIwNywxNS42MzItMTMuOTA4LDMwLjUxMS0yMi45MzYsNDQuNDUNCgljLTExLjI0MywxNy4zODctMjQuNTQ1LDMzLjMyMi0zOS41NDksNDcuNDQ5Yy04Ljc4OCw4LjI4Ni0xOC4xNSwxNS45NDUtMjguMDM1LDIyLjkyNUMzNjEuODA2LDQ5NC43MDcsMzEwLjkzLDUxMiwyNTYsNTEyDQoJcy0xMDUuODA2LTE3LjI5My0xNDcuNDk4LTQ2LjczOGMtMTIuMzcyLTguNzM1LTIzLjkyOC0xOC41MjYtMzQuNTM0LTI5LjI2OEMyOC4yMzMsMzg5Ljc1NywwLDMyNi4xNjUsMCwyNTYNCglTMjguMjMzLDEyMi4yNDMsNzMuOTY4LDc2LjAwNmMxMS4yMzMtMTEuMzY4LDIzLjUzMS0yMS42ODIsMzYuNzI4LTMwLjc5M0MxNTEuOTcsMTYuNjk3LDIwMi4wMzEsMCwyNTYsMA0KCXMxMDQuMDMsMTYuNjk3LDE0NS4zMDQsNDUuMjEzYzEwLjA4Myw2Ljk0OSwxOS42MzQsMTQuNjE4LDI4LjU4OCwyMi45MjVjMTUuNjg0LDE0LjUwMywyOS41MzksMzAuOTYsNDEuMTksNDguOTc0DQoJYzkuMDI4LDEzLjkzOSwxNi43MjksMjguODE4LDIyLjkzNiw0NC40NUM1MDUuNjI2LDE5MC43ODgsNTEyLDIyMi42NDcsNTEyLDI1NnoiLz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGMkYyRjI7IiBkPSJNMzkxLjA1LDIzMi45N2MtNy4xMjUtMjAuNjY0LTM2LjM0MS0yMC42NjQtNDIuMDQtMy41NjNjLTUuNywxNy4xMDEsMTMuNTM5LDI3LjA3Niw0My40NjYsMzcuMDUzDQoJCWMyOS45MjcsOS45NzYsNDguNDU0LDM2LjM0MSw0NC44OTEsNTkuODU0cy0xMy41MzksNTQuMTU0LTcyLjY4LDU0LjE1NGMtMzYuOTYzLDAtNTcuNTA1LTIzLjEwMy02Ny43MTQtNDAuNDI5bDMzLjUxMS0yMC4xMzgNCgkJYzAsMCwxMS40MDEsMjQuMjI3LDMyLjc3NywyNC4yMjdjMjEuMzc3LDAsMjkuOTI3LTcuMTI1LDI5LjkyNy0yMy41MTRjMC0xOS45NTEtNjkuMTE4LTI3LjA3Ni03OS44MDYtNjEuMjc5DQoJCXMzLjU2My04Mi42NTYsNTMuNDQxLTc5LjA5NGMzMS4xNzUsMi4yMjcsNDguNzEsMTcuNTM1LDU3LjQ3OCwyOC43MDNMMzkxLjA1LDIzMi45N3oiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRjJGMkYyOyIgZD0iTTIzNS43MTQsMTgzLjgwNWMwLDAsMCwxMjAuNDIxLDAsMTM2LjgxYzAsMTYuMzg4LTE0LjI1MSwyNC45NC0yOC41MDIsMjIuMDg5DQoJCWMtMTQuMjUxLTIuODUtMjAuNjY0LTE5Ljk1MS0yMC42NjQtMTkuOTUxbC0zMi43NzcsMjIuMDg5YzAsMCw3LjEyNSwzMi43NzcsNTIuMDE2LDM1LjYyOA0KCQljNDQuODkxLDIuODUsNzAuNTQyLTI0LjIyNyw3MC41NDItNDcuMDI5czAtMTQ5LjYzNiwwLTE0OS42MzZMMjM1LjcxNCwxODMuODA1TDIzNS43MTQsMTgzLjgwNXoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRjJGMkYyOyIgZD0iTTczLjk2OCw0NS4yMTN2MzkwLjc4MWMxMC42MDYsMTAuNzQyLDIyLjE2MiwyMC41MzIsMzQuNTM0LDI5LjI2OGgyOTQuOTk2DQoJCWM5Ljg4NS02Ljk4LDE5LjI0Ny0xNC42MzksMjguMDM1LTIyLjkyNUg5Ni44OTNWNjguMTM4aDM3NC4xODh2MzI2Ljc1YzkuMDI4LTEzLjkzOSwxNi43MjktMjguODE4LDIyLjkzNi00NC40NVY0NS4yMTNINzMuOTY4eiIvPg0KPC9nPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojM0Y0QTQzOyIgY3g9Ijg3Ljg1NSIgY3k9IjMzOS4xNDMiIHI9IjQwLjYxNSIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+
+        <div class="card-body">
+          <h5 class="card-title text-center">JavaScript</h5>
+          <h6 class="card-text text-center">Knowledgeable in ES5, ES6 and Typescript.</h6>
+        </div>
+      </div>
+
+      <div class="card card_style" style="width: 18rem;">
+        <img alt="ADOBEXD" width="200px"
+          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGODBFNDsiIGQ9Ik01MTIsNTEySDBWMGg1MTJWNTEyeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGNUFENDsiIGQ9Ik01MTIsNTEySDI1NlYwaDI1NlY1MTJ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojN0YxMzYzOyIgZD0iTTQ4Miw0ODJIMzBWMzBoNDUyVjQ4MnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiM2NjEwNTQ7IiBkPSJNNDgyLDQ4MkgyNTZWMzBoMjI2VjQ4MnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRjgwRTQ7IiBkPSJNMTQ2LjQ2MSwxODEuNmw0Mi40OCw2My4zNmw0Mi4yNC02My4zNmgzNS43NmwtNjAuNzIsODYuNGw1OC44LDg0aC0zNS43NmwtNDAuMzItNjAuOTZMMTQ4LjM4MiwzNTINCgloLTM2bDU4LjgtODRsLTYwLjcyMS04Ni40SDE0Ni40NjF6Ii8+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkY1QUQ0OyIgZD0iTTMyNS43NDEsMzU0LjRjLTM2LjkyMiwwLTU5Ljc2MS0zMC43NzUtNTkuNzYxLTY1LjI4YzAtMzkuMTIsMjYuMzM5LTY1LjA0LDU2LjE2LTY1LjA0DQoJCWMyNS4yNjIsMCwzOC4zMTcsMTcuMDQsNDIuNDc5LDI0LjI0VjE3Ni44aDMyLjE2djEzOC4yNGMwLDMuMzYsNC43MTgsOS40NDIsNy40NCw5LjZWMzUyYy01LjYwMywxLjExOC0xMC4xNjMsMS42OC0xMy42ODEsMS42OA0KCQljLTIzLjIyMSwwLTIxLjExOS0yMy41Mi0yMS4xMTktMjMuNTJDMzY0Ljc3OCwzMzguMTYzLDM1MC45NDQsMzU0LjQsMzI1Ljc0MSwzNTQuNHogTTMzNC4xNDEsMzI3LjA0DQoJCWMyMC4xNzksMCwyOS4zNTgtMTguMDc5LDMwLjQ3OS0yMS4xMnYtMzBjLTEuMjgyLTMuNTE4LTEyLjgwMS0yNC40OC0zMi4zOTktMjQuNDhjLTIxLjkwMSwwLTMyLjg4LDIxLjcyNy0zMi44OCwzOC40DQoJCUMyOTkuMzQxLDMwOC4xNjcsMzEyLjgxOSwzMjcuMDQsMzM0LjE0MSwzMjcuMDR6Ii8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGNUFENDsiIHBvaW50cz0iMjU2LDE4MS42IDI1NiwxOTcuMTY5IDI2Ni45NDEsMTgxLjYgCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGRjVBRDQ7IiBwb2ludHM9IjI1NiwzNTIgMjY1LjAyMSwzNTIgMjU2LDMzOS4xMTIgCSIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+
+        <div class="card-body">
+          <h5 class="card-title text-center"> Adobe XD</h5>
+          <h6 class="card-text text-center">Up to date with the latest update for designers</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionB  animate__animated animate__fadeInUp">
+    <h3 class="centerText textTomato">What i believe in</h3>
+    <div class="sectionB__contenedorLista">
+      <ul>
+        <li class="whiteText"> <i>A desire to learn:</i> I’m as much a self-taught entrepreneur as a willing student,
+          constantly taking courses. Either way I go wherever I can find the knowledge I look for. </li>
+        <li class="whiteText"> <i>Work ethic:</i> I pride myself in being constantly focused and communicative, always
+          asking the necessary questions. That probably stems from my habit of thoroughly researching the things I
+          indulge in. </li>
+        <li class="whiteText"> <i>Balancing work and life:</i> It is a need to disconnect myself from my work in my free
+          time. I often find myself using that time to read or watch some of my favourite films like The Lord of the
+          Rings. </li>
+        <li class="whiteText"> <i>Creativity:</i> One of my many passions is photography. You can find my work on mostly
+          street photorgaphy on my Instagram account. </li>
+      </ul>
+    </div>
+  </section>
+  <!--SECTION 4-->
+  <footer class="footer has-text-right">
+    <div class="contenedor">
+      <nav class="navegacion">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/tomas-rossi-378574208/"><img alt="LinkedIn"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTE2MC4wMDc4MTIgNDIzaC03MHYtMjI2aDcwem02Ljk4NDM3Ni0yOTguMDAzOTA2YzAtMjIuNjI4OTA2LTE4LjM1OTM3Ni00MC45OTYwOTQtNDAuOTc2NTYzLTQwLjk5NjA5NC0yMi43MDMxMjUgMC00MS4wMTU2MjUgMTguMzY3MTg4LTQxLjAxNTYyNSA0MC45OTYwOTQgMCAyMi42MzY3MTggMTguMzEyNSA0MS4wMDM5MDYgNDEuMDE1NjI1IDQxLjAwMzkwNiAyMi42MTcxODcgMCA0MC45NzY1NjMtMTguMzY3MTg4IDQwLjk3NjU2My00MS4wMDM5MDZ6bTI1NS4wMDc4MTIgMTczLjY2Nzk2OGMwLTYwLjY2Nzk2OC0xMi44MTY0MDYtMTA1LjY2NDA2Mi04My42ODc1LTEwNS42NjQwNjItMzQuMDU0Njg4IDAtNTYuOTE0MDYyIDE3LjAzMTI1LTY2LjI0NjA5NCAzNC43NDIxODhoLS4wNjY0MDZ2LTMwLjc0MjE4OGgtNjh2MjI2aDY4di0xMTIuMjEwOTM4YzAtMjkuMzg2NzE4IDcuNDgwNDY5LTU3Ljg1NTQ2OCA0My45MDYyNS01Ny44NTU0NjggMzUuOTI5Njg4IDAgMzcuMDkzNzUgMzMuNjA1NDY4IDM3LjA5Mzc1IDU5LjcyMjY1NnYxMTAuMzQzNzVoNjl6bTkwIDE1My4zMzU5Mzh2LTM5MmMwLTMzLjA4NTkzOC0yNi45MTQwNjItNjAtNjAtNjBoLTM5MmMtMzMuMDg1OTM4IDAtNjAgMjYuOTE0MDYyLTYwIDYwdjM5MmMwIDMzLjA4NTkzOCAyNi45MTQwNjIgNjAgNjAgNjBoMzkyYzMzLjA4NTkzOCAwIDYwLTI2LjkxNDA2MiA2MC02MHptLTYwLTQxMmMxMS4wMjczNDQgMCAyMCA4Ljk3MjY1NiAyMCAyMHYzOTJjMCAxMS4wMjczNDQtOC45NzI2NTYgMjAtMjAgMjBoLTM5MmMtMTEuMDI3MzQ0IDAtMjAtOC45NzI2NTYtMjAtMjB2LTM5MmMwLTExLjAyNzM0NCA4Ljk3MjY1Ni0yMCAyMC0yMHptMCAwIiBmaWxsPSIjZTdlN2U3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />
+          </li>
+          <li>
+            <a href="https://github.com/vendechevis"><img alt="GitHub"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTI1NS45NjgsNS4zMjlDMTE0LjYyNCw1LjMyOSwwLDEyMC40MDEsMCwyNjIuMzUzYzAsMTEzLjUzNiw3My4zNDQsMjA5Ljg1NiwxNzUuMTA0LDI0My44NzIgICAgYzEyLjgsMi4zNjgsMTcuNDcyLTUuNTY4LDE3LjQ3Mi0xMi4zODRjMC02LjExMi0wLjIyNC0yMi4yNzItMC4zNTItNDMuNzEyYy03MS4yLDE1LjUyLTg2LjI0LTM0LjQ2NC04Ni4yNC0zNC40NjQgICAgYy0xMS42MTYtMjkuNjk2LTI4LjQxNi0zNy42LTI4LjQxNi0zNy42Yy0yMy4yNjQtMTUuOTM2LDEuNzI4LTE1LjYxNiwxLjcyOC0xNS42MTZjMjUuNjk2LDEuODI0LDM5LjIsMjYuNDk2LDM5LjIsMjYuNDk2ICAgIGMyMi44NDgsMzkuMjY0LDU5LjkzNiwyNy45MzYsNzQuNTI4LDIxLjM0NGMyLjMwNC0xNi42MDgsOC45MjgtMjcuOTM2LDE2LjI1Ni0zNC4zNjggICAgYy01Ni44MzItNi40OTYtMTE2LjYwOC0yOC41NDQtMTE2LjYwOC0xMjcuMDA4YzAtMjguMDY0LDkuOTg0LTUxLjAwOCwyNi4zNjgtNjguOTkyYy0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQsMi40OTYtNjggICAgYzAsMCwyMS41MDQtNi45MTIsNzAuNCwyNi4zMzZjMjAuNDE2LTUuNjk2LDQyLjMwNC04LjU0NCw2NC4wOTYtOC42NGMyMS43MjgsMC4xMjgsNDMuNjQ4LDIuOTQ0LDY0LjA5Niw4LjY3MiAgICBjNDguODY0LTMzLjI0OCw3MC4zMzYtMjYuMzM2LDcwLjMzNi0yNi4zMzZjMTMuOTUyLDM1LjM5Miw1LjE4NCw2MS41MDQsMi41Niw2OGMxNi40MTYsMTcuOTg0LDI2LjMwNCw0MC45MjgsMjYuMzA0LDY4Ljk5MiAgICBjMCw5OC43Mi01OS44NCwxMjAuNDQ4LTExNi44NjQsMTI2LjgxNmM5LjE4NCw3LjkzNiwxNy4zNzYsMjMuNjE2LDE3LjM3Niw0Ny41ODRjMCwzNC4zNjgtMC4zMiw2Mi4wOC0wLjMyLDcwLjQ5NiAgICBjMCw2Ljg4LDQuNjA4LDE0Ljg4LDE3LjYsMTIuMzUyQzQzOC43Miw0NzIuMTQ1LDUxMiwzNzUuODU3LDUxMiwyNjIuMzUzQzUxMiwxMjAuNDAxLDM5Ny4zNzYsNS4zMjksMjU1Ljk2OCw1LjMyOXoiIGZpbGw9IiNlN2U3ZTciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
+          </li>
+          <li>
+            <a href="https://www.instagram.com/tomasrossia/"><img alt="Instagram"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMSA1MTEuOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNTEwLjk0OTIxOSAxNTAuNWMtMS4xOTkyMTktMjcuMTk5MjE5LTUuNTk3NjU3LTQ1Ljg5ODQzOC0xMS44OTg0MzgtNjIuMTAxNTYyLTYuNS0xNy4xOTkyMTktMTYuNS0zMi41OTc2NTctMjkuNjAxNTYyLTQ1LjM5ODQzOC0xMi44MDA3ODEtMTMtMjguMzAwNzgxLTIzLjEwMTU2Mi00NS4zMDA3ODEtMjkuNS0xNi4yOTY4NzYtNi4zMDA3ODEtMzQuODk4NDM4LTEwLjY5OTIxOS02Mi4wOTc2NTctMTEuODk4NDM4LTI3LjQwMjM0My0xLjMwMDc4MS0zNi4xMDE1NjItMS42MDE1NjItMTA1LjYwMTU2Mi0xLjYwMTU2MnMtNzguMTk5MjE5LjMwMDc4MS0xMDUuNSAxLjVjLTI3LjE5OTIxOSAxLjE5OTIxOS00NS44OTg0MzggNS42MDE1NjItNjIuMDk3NjU3IDExLjg5ODQzOC0xNy4yMDMxMjQgNi41LTMyLjYwMTU2MiAxNi41LTQ1LjQwMjM0MyAyOS42MDE1NjItMTMgMTIuODAwNzgxLTIzLjA5NzY1NyAyOC4zMDA3ODEtMjkuNSA0NS4zMDA3ODEtNi4zMDA3ODEgMTYuMzAwNzgxLTEwLjY5OTIxOSAzNC44OTg0MzgtMTEuODk4NDM4IDYyLjA5NzY1Ny0xLjMwMDc4MSAyNy40MDIzNDMtMS42MDE1NjIgMzYuMTAxNTYyLTEuNjAxNTYyIDEwNS42MDE1NjJzLjMwMDc4MSA3OC4xOTkyMTkgMS41IDEwNS41YzEuMTk5MjE5IDI3LjE5OTIxOSA1LjYwMTU2MiA0NS44OTg0MzggMTEuOTAyMzQzIDYyLjEwMTU2MiA2LjUgMTcuMTk5MjE5IDE2LjU5NzY1NyAzMi41OTc2NTcgMjkuNTk3NjU3IDQ1LjM5ODQzOCAxMi44MDA3ODEgMTMgMjguMzAwNzgxIDIzLjEwMTU2MiA0NS4zMDA3ODEgMjkuNSAxNi4zMDA3ODEgNi4zMDA3ODEgMzQuODk4NDM4IDEwLjY5OTIxOSA2Mi4xMDE1NjIgMTEuODk4NDM4IDI3LjI5Njg3NiAxLjIwMzEyNCAzNiAxLjUgMTA1LjUgMS41czc4LjE5OTIxOS0uMjk2ODc2IDEwNS41LTEuNWMyNy4xOTkyMTktMS4xOTkyMTkgNDUuODk4NDM4LTUuNTk3NjU3IDYyLjA5NzY1Ny0xMS44OTg0MzggMzQuNDAyMzQzLTEzLjMwMDc4MSA2MS42MDE1NjItNDAuNSA3NC45MDIzNDMtNzQuODk4NDM4IDYuMjk2ODc2LTE2LjMwMDc4MSAxMC42OTkyMTktMzQuOTAyMzQzIDExLjg5ODQzOC02Mi4xMDE1NjIgMS4xOTkyMTktMjcuMzAwNzgxIDEuNS0zNiAxLjUtMTA1LjVzLS4xMDE1NjItNzguMTk5MjE5LTEuMzAwNzgxLTEwNS41em0tNDYuMDk3NjU3IDIwOWMtMS4xMDE1NjIgMjUtNS4zMDA3ODEgMzguNS04LjgwMDc4MSA0Ny41LTguNjAxNTYyIDIyLjMwMDc4MS0yNi4zMDA3ODEgNDAtNDguNjAxNTYyIDQ4LjYwMTU2Mi05IDMuNS0yMi41OTc2NTcgNy42OTkyMTktNDcuNSA4Ljc5Njg3Ni0yNyAxLjIwMzEyNC0zNS4wOTc2NTcgMS41LTEwMy4zOTg0MzggMS41cy03Ni41LS4yOTY4NzYtMTAzLjQwMjM0My0xLjVjLTI1LTEuMDk3NjU3LTM4LjUtNS4yOTY4NzYtNDcuNS04Ljc5Njg3Ni0xMS4wOTc2NTctNC4xMDE1NjItMjEuMTk5MjE5LTEwLjYwMTU2Mi0yOS4zOTg0MzgtMTkuMTAxNTYyLTguNS04LjMwMDc4MS0xNS0xOC4zMDA3ODEtMTkuMTAxNTYyLTI5LjM5ODQzOC0zLjUtOS03LjY5OTIxOS0yMi42MDE1NjItOC43OTY4NzYtNDcuNS0xLjIwMzEyNC0yNy0xLjUtMzUuMTAxNTYyLTEuNS0xMDMuNDAyMzQzcy4yOTY4NzYtNzYuNSAxLjUtMTAzLjM5ODQzOGMxLjA5NzY1Ny0yNSA1LjI5Njg3Ni0zOC41IDguNzk2ODc2LTQ3LjUgNC4xMDE1NjItMTEuMTAxNTYyIDEwLjYwMTU2Mi0yMS4xOTkyMTkgMTkuMjAzMTI0LTI5LjQwMjM0MyA4LjI5Njg3Ni04LjUgMTguMjk2ODc2LTE1IDI5LjM5ODQzOC0xOS4wOTc2NTcgOS0zLjUgMjIuNjAxNTYyLTcuNjk5MjE5IDQ3LjUtOC44MDA3ODEgMjctMS4xOTkyMTkgMzUuMTAxNTYyLTEuNSAxMDMuMzk4NDM4LTEuNSA2OC40MDIzNDMgMCA3Ni41LjMwMDc4MSAxMDMuNDAyMzQzIDEuNSAyNSAxLjEwMTU2MiAzOC41IDUuMzAwNzgxIDQ3LjUgOC44MDA3ODEgMTEuMDk3NjU3IDQuMDk3NjU3IDIxLjE5OTIxOSAxMC41OTc2NTcgMjkuMzk4NDM4IDE5LjA5NzY1NyA4LjUgOC4zMDA3ODEgMTUgMTguMzAwNzgxIDE5LjEwMTU2MiAyOS40MDIzNDMgMy41IDkgNy42OTkyMTkgMjIuNTk3NjU3IDguODAwNzgxIDQ3LjUgMS4xOTkyMTkgMjcgMS41IDM1LjA5NzY1NyAxLjUgMTAzLjM5ODQzOHMtLjMwMDc4MSA3Ni4zMDA3ODEtMS41IDEwMy4zMDA3ODF6bTAgMCIgZmlsbD0iI2U3ZTdlNyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1Ni40NDkyMTkgMTI0LjVjLTcyLjU5NzY1NyAwLTEzMS41IDU4Ljg5ODQzOC0xMzEuNSAxMzEuNXM1OC45MDIzNDMgMTMxLjUgMTMxLjUgMTMxLjVjNzIuNjAxNTYyIDAgMTMxLjUtNTguODk4NDM4IDEzMS41LTEzMS41cy01OC44OTg0MzgtMTMxLjUtMTMxLjUtMTMxLjV6bTAgMjE2LjgwMDc4MWMtNDcuMDk3NjU3IDAtODUuMzAwNzgxLTM4LjE5OTIxOS04NS4zMDA3ODEtODUuMzAwNzgxczM4LjIwMzEyNC04NS4zMDA3ODEgODUuMzAwNzgxLTg1LjMwMDc4MWM0Ny4xMDE1NjIgMCA4NS4zMDA3ODEgMzguMTk5MjE5IDg1LjMwMDc4MSA4NS4zMDA3ODFzLTM4LjE5OTIxOSA4NS4zMDA3ODEtODUuMzAwNzgxIDg1LjMwMDc4MXptMCAwIiBmaWxsPSIjZTdlN2U3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNDIzLjg1MTU2MiAxMTkuMzAwNzgxYzAgMTYuOTUzMTI1LTEzLjc0NjA5MyAzMC42OTkyMTktMzAuNzAzMTI0IDMwLjY5OTIxOS0xNi45NTMxMjYgMC0zMC42OTkyMTktMTMuNzQ2MDk0LTMwLjY5OTIxOS0zMC42OTkyMTkgMC0xNi45NTcwMzEgMTMuNzQ2MDkzLTMwLjY5OTIxOSAzMC42OTkyMTktMzAuNjk5MjE5IDE2Ljk1NzAzMSAwIDMwLjcwMzEyNCAxMy43NDIxODggMzAuNzAzMTI0IDMwLjY5OTIxOXptMCAwIiBmaWxsPSIjZTdlN2U3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
