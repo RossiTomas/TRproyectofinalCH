@@ -405,9 +405,7 @@ h1 {
   .card {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
-    margin-left: 13rem !important; }
-  .card img {
-    margin-left: 6.5% !important; } }
+    margin-left: 13rem !important; } }
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -475,15 +473,11 @@ h1 {
     width: 100% important; }
   .cardCont {
     margin-top: 1rem;
-    align-items: center; }
-  .card img {
-    margin-left: 5% !important; } }
+    align-items: center; } }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  .cardCont {
-    align-items: center !important; }
-    .cardCont img {
-      margin-left: 7.5% !important; }
+  .card_style img {
+    margin-left: 15% !important; }
   .card img {
     margin-left: 7% !important; } }
 
@@ -505,3 +499,26 @@ h1 {
 @media only screen and (max-width: 480px) {
   .card_style img {
     margin-left: 3% !important; } }
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+  .contenedorTexto {
+    width: 60rem;
+    margin-left: 5rem; }
+  .contenedorCentral h1 {
+    margin-left: 5rem; } }
+
+.contenedorCentral h2 {
+  margin-left: 5rem; }
+
+.card_style img {
+  margin-left: 3% !important; }
+
+.sectionB__contenedorLista {
+  width: 600px;
+  margin-left: 23rem !important; }
+
+.formulario {
+  margin-left: 500px; }
+
+.footerHome {
+  position: relative; }
