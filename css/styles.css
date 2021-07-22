@@ -470,7 +470,8 @@ h1 {
     margin-bottom: 10rem;
     margin-left: 25px !important; }
   .contenedorPrincipal {
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    margin-bottom: 35rem; }
     .contenedorPrincipal h2 {
       font-size: 1.3rem !important; }
   .contenedorCentral {
