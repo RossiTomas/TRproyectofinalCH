@@ -12,7 +12,15 @@
     font-weight: 700;
     src: local("Harabara"), url("https://fonts.cdnfonts.com/s/8571/Harabara.woff") format("woff");
 }
-
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Light'), local('Graphik-Light'),
+        url('Graphik-Light.woff2') format('woff2'),
+        url('Graphik-Light.woff') format('woff'),
+        url('Graphik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
 #logo {
     font-family: "Harabara", sans-serif;
     font-size: 18px !important;
@@ -41,6 +49,12 @@ form {
     line-height: 1.2;
 }
 
+.contenedorPrincipal h1, h2 {
+    font-family: 'Graphik';
+}
+.contenedorCentral h1, h2 {
+    font-family: 'Graphik';
+}
 .mainHome__tituMain {
     font-size: 2.5rem;
 }
@@ -534,9 +548,16 @@ h1 {
 }
 @media only screen and (max-width: 768px) {
     .contenedorPrincipal {
-        margin-left: 10px;
+        margin-top: 14rem;
+        margin-left: 1rem;
         width: 70%;
-        margin-bottom: 0rem;
+        margin-bottom: 20rem;
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 2rem !important;
+        }
     }
     h2 {
         font-size: 2.5rem !important;
@@ -588,6 +609,12 @@ h1 {
         width: 20rem !important;
         margin-bottom: 10rem;
         margin-left: 25px !important;
+    }
+    .contenedorPrincipal {
+        margin-top: 4rem;
+        h2 {
+            font-size: 1.3rem !important;
+        }
     }
 }
 
