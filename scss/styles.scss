@@ -32,22 +32,32 @@ h1 {
     font-family: "Manrope", sans-serif;
     font-weight: bold;
 }
+ol,
+ul {
+    font-family: "open-sans", sans-serif;
+    font-weight: normal;
+    font-weight: 375;
+    line-height: 1.5;
+}
+p,
+li {
+    font-family: 'Graphik';
+    font-size: 1.05rem;
+}
 
 h2,
 h3,
 h5,
-p,
-ul,
-ol,
 tr,
 th,
 td,
 form {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    font-family: 'Graphik';
+    font-size: 1.3rem;
     font-weight: 375;
     line-height: 1.2;
 }
+
 
 .contenedorPrincipal h1, h2 {
     font-family: 'Graphik';
@@ -349,17 +359,6 @@ form {
 }
 
 
-/* BOOTSTRAP CARRUSEL */
-.carousel {
-    width: 350px;
-    height: 450px;
-    display: flex;
-    justify-content: space-around;
-}
-.carousel-item {
-    width: 350px;
-}
-
 /* MIXINS */
 
 @mixin margins($margin-left, $margin-right) {
@@ -615,6 +614,9 @@ h1 {
         h2 {
             font-size: 1.3rem !important;
         }
+    }
+    .contenedorCentral {
+        width: 100%;
     }
 }
 
