@@ -65,9 +65,7 @@ body {
   background-color: #0f1108; }
 
 .backgroundHome {
-  background: linear-gradient(135deg, #080909, #40704c, #175627, #0d7828);
-  background-size: 800% 800%;
-  animation: AnimationName 8s ease infinite; }
+  background-image: url(../img/backgroundHome.png); }
 
 main {
   width: 100%; }
@@ -125,21 +123,23 @@ main {
   text-align: right !important; }
 
 /* FORMULARIOS */
+form {
+  width: 500px;
+  background-color: white;
+  border-radius: 6px; }
+
 .contenedorForm {
   display: flex;
   justify-content: center;
   margin-bottom: 40px; }
 
 .formulario {
-  width: 400px;
-  margin-top: 50px;
-  margin-left: 740px;
-  margin-right: 500px;
-  margin-bottom: 75px;
-  background-color: white;
-  border: solid grey 1px;
+  width: 100%;
+  margin-top: 1rem;
   border-radius: 6px;
-  padding: 1.25rem; }
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center; }
   .formulario label {
     text-decoration: bold;
     font-size: 16px;
@@ -235,17 +235,17 @@ main {
     margin-right: 8px !important; }
 
 .contenedorPrincipal {
-  margin-left: 250px;
-  margin-right: 200px;
-  margin-top: 220px;
-  margin-bottom: 282px; }
+  margin-top: 12rem;
+  margin-bottom: 13rem; }
   .contenedorPrincipal h2 {
     line-height: 1.5;
     font-weight: 375;
     font-size: 3rem;
-    color: white !important; }
+    color: white !important;
+    margin-left: 20rem; }
   .contenedorPrincipal h1 {
-    font-weight: 700; }
+    font-weight: 700;
+    margin-left: 20rem; }
 
 .proyectos__proyectoInfo {
   margin-left: 200px; }
@@ -280,10 +280,6 @@ main {
   width: 350px; }
 
 /* MIXINS */
-.formulario {
-  margin-left: 740px;
-  margin-right: 500px; }
-
 .sectionA__box {
   height: 330px;
   width: 210px; }
@@ -294,16 +290,16 @@ h1 {
 
 /* CARDS PROYECTO */
 .card {
-  margin-top: 75px;
-  margin-bottom: 75px;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
   background-color: #191919;
   border: 1px solid #302e2e;
   height: 450px;
-  width: 350px !important; }
+  width: 350px !important;
+  align-items: center; }
   .card img {
     width: 300px;
     height: 250px;
-    margin-left: 25px;
     margin-top: 25px; }
   .card h3 {
     color: tomato;
@@ -323,6 +319,9 @@ h1 {
     font-weight: bold;
     margin-left: 5px;
     margin-top: 20px; }
+  .card .text-left {
+    width: 100%;
+    margin-left: 0.8rem; }
 
 .cardContainer {
   display: flex;
@@ -370,7 +369,9 @@ h1 {
   .proyectos__proyectoFoto3 img {
     width: 220px; }
   .proyectos__proyectoFoto3 {
-    margin-left: 1rem; } }
+    margin-left: 1rem; }
+  form {
+    width: 300px; } }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .proyectos__proyectoFoto3 img {
@@ -397,9 +398,7 @@ h1 {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
     margin-left: 5% !important;
-    margin-right: 5% !important; }
-  .card img {
-    margin-left: 5% !important; } }
+    margin-right: 5% !important; } }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .card {
@@ -417,7 +416,7 @@ h1 {
   .contenedorPrincipal {
     margin-left: 10px;
     width: 70%;
-    margin-right: 0; }
+    margin-bottom: 0rem; }
   h2 {
     font-size: 2.5rem !important;
     color: white; } }
@@ -434,17 +433,6 @@ h1 {
     width: 100vw; }
   .footerHome {
     width: 100vw; } }
-
-@media only screen and (max-width: 768px) {
-  .formulario {
-    width: 300px;
-    margin-left: 40px !important; } }
-
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
-  .formulario {
-    width: 400px;
-    margin-left: 180px !important;
-    margin-bottom: 200px !important; } }
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -473,13 +461,9 @@ h1 {
     width: 100% important; }
   .cardCont {
     margin-top: 1rem;
-    align-items: center; } }
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .card_style img {
-    margin-left: 15% !important; }
-  .card img {
-    margin-left: 7% !important; } }
+    align-items: center; }
+  .backgroundHome {
+    background-image: url(../img/backgroundHome2.png); } }
 
 @media only screen and (min-width: 480px) {
   .footerHome {
@@ -496,29 +480,16 @@ h1 {
     width: 600px !important;
     margin-left: 80px !important; } }
 
-@media only screen and (max-width: 480px) {
-  .card_style img {
-    margin-left: 3% !important; } }
-
-@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
   .contenedorTexto {
     width: 60rem;
     margin-left: 5rem; }
-  .contenedorCentral h1 {
-    margin-left: 5rem; } }
+  .footerHome {
+    position: relative; }
+  .contenedorCentral h1, h2 {
+    margin-left: 5rem !important; } }
 
-.contenedorCentral h2 {
-  margin-left: 5rem; }
-
-.card_style img {
-  margin-left: 3% !important; }
-
-.sectionB__contenedorLista {
-  width: 600px;
-  margin-left: 23rem !important; }
-
-.formulario {
-  margin-left: 500px; }
-
-.footerHome {
-  position: relative; }
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+  .sectionB__contenedorLista {
+    width: 40rem;
+    margin-left: 24rem; } }
