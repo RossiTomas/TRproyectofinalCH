@@ -21,9 +21,11 @@
     font-weight: 300;
     font-style: normal;
   }
+
+  
 #logo {
     font-family: "Harabara", sans-serif;
-    font-size: 18px !important;
+    font-size: 1.125rem !important;
     letter-spacing: 1px;
 }
 
@@ -59,8 +61,13 @@ form {
 }
 
 
-.contenedorPrincipal h1, h2 {
+.contenedorPrincipal h1 {
     font-family: 'Graphik';
+}
+.contenedorPrincipal h2 {
+    font-family: 'Chronicle Display', sans-serif;
+    font-weight: 375;
+                                                
 }
 .contenedorCentral h1, h2 {
     font-family: 'Graphik';
@@ -71,7 +78,7 @@ form {
 
 .titulares {
     color: orangered;
-    margin: 10px 10px;
+    margin: 0.625rem 0.625rem;
 }
 
 .whiteText,
@@ -85,15 +92,6 @@ h5 {
     margin-top: 3rem;
     padding: 2rem 2rem 2rem 2rem;
 }
-
-.tablasColor1 {
-    background-color: turquoise;
-    color: rgb(17, 0, 255);
-    margin: 10px;
-    list-style-position: inside;
-    list-style-type: upper-latin;
-}
-
 /* BACKGROUNDS */
 
 body {
@@ -106,13 +104,6 @@ body {
 
 main {
     width: 100%;
-}
-
-.retrato {
-    margin: 10px 10px 10px 10px;
-    position: relative;
-    left: 1200px;
-    bottom: 100px;
 }
 
 /* HEADER Y CONTENEDORES */
@@ -132,7 +123,6 @@ main {
 
 .contenedor {
     width: 95%;
-    max-width: 1700px;
     margin: 0 auto;
 }
 
@@ -153,7 +143,7 @@ main {
         opacity: 0.4;
     }
     img {
-        width: 22px;
+        width: 1.375rem;
         color: white;
         opacity: 0.7;
     }
@@ -176,32 +166,32 @@ main {
 
 /* FORMULARIOS */
 form {
-    width: 500px;
+    width: 31.25rem;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 0.375rem;
 }
 
 .contenedorForm {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .formulario {
     width: 100%;
     margin-top: 1rem;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     padding: 1.25rem;
     display: flex;
     justify-content: center;
     label {
         text-decoration: bold;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 1.5;
     }
     input {
-        border: 1px black solid transparent;
+        border: 0.063rem black solid transparent;
         display: block;
         min-width: 100%;
         max-width: 100%;
@@ -211,15 +201,14 @@ form {
         max-width: 100%;
     }
     label {
-        margin-top: 10px;
+        margin-top: 0.6rem;
     }
 }
 
 .inputs {
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    @include margins (1rem, 1rem);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* CAJAS SECCION PROYECTOS */
@@ -231,7 +220,7 @@ form {
 .card_style {
     border: none !important;
     background-color: #fefefe !important;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
     h5 {
         text-align: center !important;
         color: tomato !important;
@@ -242,7 +231,7 @@ form {
     }
 }
 .card-body h5 {
-    margin-top: 25px;
+    margin-top: 1.563rem;
 }
 .cardCont {
     display: flex;
@@ -251,7 +240,7 @@ form {
 }
 
 .Skills {
-    background-color: tomato;
+    background-color: #E94F37;
     width: 100%;
     padding: 1rem 1rem 1rem 1rem;
     h3 {
@@ -265,9 +254,9 @@ form {
 
 .sectionA {
     background-color: #e94f37;
-    height: 550px;
+    height: 34.375rem;
     h2 {
-        margin-top: 10px;
+        margin-top: 0.6rem;
     }
 }
 .sectionB h2 {
@@ -275,39 +264,37 @@ form {
     margin-top: 2rem;
 }
 .sectionB ul li {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .contenedorCentral {
-    margin-right: 200px;
-    margin-top: 40px;
-    margin-bottom: 35px;
+    margin-right: 12.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.2rem;
     h1 {
-        margin-left: 250px;
+        margin-left: 15.625rem;
         font-weight: 700;
         font-size: 2.5rem;
     }
     p {
-        margin-left: 250px;
+        margin-left: 15.625rem;
     }
     h2 {
-        margin-left: 250px;
+        margin-left: 15.625rem;
         font-weight: 400;
         font-size: 3.7rem;
     }
 }
 
 .contenedorTexto {
-    margin-top: 40px;
-    margin-left: 260px;
-    margin-right: 600px;
+    margin-top: 2.5rem;
+    @include margins (15.625rem, 37.5rem);
 }
 
 .sectionB__contenedorLista {
-    margin-left: 660px;
-    margin-right: 650px;
+    @include margins (41.25rem, 41rem);
     li i {
-        margin-right: 8px !important;
+        margin-right: 0.5rem !important;
     }
 }
 
@@ -315,47 +302,47 @@ form {
     margin-top: 12rem;
     margin-bottom: 13rem;
     h2 {
-        line-height: 1.5;
-        font-weight: 375;
-        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 300;
+        font-size: 3.7rem !important;
         color: white !important;
         margin-left: 20rem;
     }
     h1 {
-        font-weight: 700;
+        font-weight: 400;
         margin-left: 20rem;
+        line-height: 1.125;
     }
 }
 
 
 
 .proyectos__proyectoInfo {
-    margin-left: 200px;
+    margin-left: 12.5rem;
 }
 
 .proyectos__proyectoFoto {
     img {
-        width: 600px;
-        margin-bottom: 35px;
+        width: 37.5rem;
+        margin-bottom: 2.2rem;
     }
 }
 
 .proyectos__proyectoFoto2 img {
-    width: 400px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-right: 50px;
+    width: 25rem;
+    @include margins (1.25rem, 2.5rem);
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .proyectos__proyectoFoto3 img {
-    width: 250px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    width: 15.625rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .proyectos__proyectoFoto3 {
-    margin-right: 300px;
+    margin-right: 18.75rem;
 }
 
 
@@ -393,24 +380,24 @@ h1 {
     margin-bottom: 7rem;
     background-color: #191919;
     border: 1px solid rgb(48, 46, 46);
-    height: 450px;
-    width: 350px !important;
+    height: 28.125rem;
+    width: 21.875rem !important;
     align-items: center;
     img {
-        width: 300px;
-        height: 250px;
-        margin-top: 25px;
+        width: 18.75rem;
+        height: 15.625rem;
+        margin-top: 1.6rem;
     }
     h3 {
         color: tomato;
-        margin-top: 35px;
-        margin-left: 5px;
+        margin-top: 2.2rem;
+        margin-left: 0.4rem;
     }
     p {
         color: rgb(61, 59, 59);
-        margin-top: 10px;
-        margin-left: 5px;
-        margin-bottom: 20px;
+        margin-top: 0.7rem;
+        margin-left: 0.4rem;
+        margin-bottom: 1.25rem;
     }
     a:hover {
         opacity: 1;
@@ -420,8 +407,8 @@ h1 {
         color: white;
         opacity: 0.4;
         font-weight: bold;
-        margin-left: 5px;
-        margin-top: 20px;
+        margin-left: 0.34rem;
+        margin-top: 1.25rem;
     }
     .text-left {
         width: 100%;
@@ -434,8 +421,8 @@ h1 {
     display: flex;
     flex-direction: row !important;
     justify-content: center;
-    gap: 50px;
-    margin-bottom: 100px;
+    gap: 3.125rem;
+    margin-bottom: 6.250rem;
 }
 
 /* Responsive seccion proyectos GRIDS */ 
@@ -474,8 +461,7 @@ h1 {
         grid-template-areas: "hh1" "m1" "p1" "a1" "f1";
     }
     .proyectos__proyectoInfo {
-        margin-left: 1px !important;
-        margin-right: 30px !important;
+        @include margins (1px, 1.875rem !important);
             text-align: center;
     }
     .proyectos__proyectoFoto img {
@@ -485,31 +471,31 @@ h1 {
         margin-left: 20%;
     }
     .proyectos__proyectoFoto3 img {
-        width: 220px;
+        width: 13.75rem;
     }
     .proyectos__proyectoFoto3 {
         margin-left: 1rem;
     }
     form {
-        width: 300px;
+        width: 18.75rem;
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     .proyectos__proyectoFoto3 img {
-        width: 300px;
+        width: 18.75rem;
         margin-left: 45%;
     }
 }
 @media only screen and (max-width: 480px) {
     .proyectos__proyectoFoto img {
-        width: 300px;
+        width: 18.75rem;
     }
     .proyectos__proyectoFoto2 img {
-        width: 300px;
+        width: 18.75rem;
         margin-left: 10% !important;
     }
     .proyectos__proyectoFoto3 img {
-        width: 300px;
+        width: 18.75rem;
     }
 }
 
@@ -522,17 +508,16 @@ h1 {
 @media only screen and (max-width: 500px) {
     .card {
         width: 90% !important;
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
-        margin-left: 5% !important;
-        margin-right: 5% !important;
+        margin-top: 0.625rem !important;
+        margin-bottom: 0.625rem !important;
+        @include margins (5%, 5% !important);
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     .card {
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
+        margin-top: 0.625rem !important;
+        margin-bottom: 0.625rem !important;
         margin-left: 13rem !important;
     }
 }
@@ -585,13 +570,13 @@ h1 {
 
 @media only screen and (max-width: 768px) {
     h1 {
-        margin-left: 25px !important;
+        margin-left: 1.563rem !important;
     }
     h2 {
-        margin-left: 25px !important;
+        margin-left: 1.563rem !important;
     }
     p {
-        margin-left: 25px !important;
+        margin-left: 1.563rem !important;
     }
     h6 {
         text-align: center !important;
@@ -601,13 +586,13 @@ h1 {
 @media only screen and (max-width: 480px) {
     .contenedorTexto {
         width: 20rem !important;
-        height: 350px;
+        height: 21.875rem;
         margin-bottom: 10rem;
     }
     .sectionB__contenedorLista {
         width: 20rem !important;
         margin-bottom: 10rem;
-        margin-left: 25px !important;
+        margin-left: 1.563rem !important;
     }
     .contenedorPrincipal {
         margin-top: 4rem;
@@ -648,10 +633,10 @@ h1 {
         margin-left: 10px !important;
     }
     .contenedorTexto {
-        width: 600px;
+        width: 37.5rem;
     }
     .sectionB__contenedorLista {
-        width: 600px !important;
+        width: 37.5rem !important;
         margin-left: 80px !important;
     }
 }
