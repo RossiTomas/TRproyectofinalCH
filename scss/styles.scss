@@ -206,9 +206,10 @@ form {
 }
 
 .inputs {
-    @include margins (1rem, 1rem);
+    margin-left: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 /* CAJAS SECCION PROYECTOS */
@@ -288,11 +289,13 @@ form {
 
 .contenedorTexto {
     margin-top: 2.5rem;
-    @include margins (15.625rem, 37.5rem);
+    margin-left: 15.625rem;
+    margin-right: 37.5rem;
 }
 
 .sectionB__contenedorLista {
-    @include margins (41.25rem, 41rem);
+    margin-left: 41.25rem;
+    margin-right: 41rem;
     li i {
         margin-right: 0.5rem !important;
     }
@@ -330,9 +333,10 @@ form {
 
 .proyectos__proyectoFoto2 img {
     width: 25rem;
-    @include margins (1.25rem, 2.5rem);
+    margin-left: 1.25rem;
     margin-bottom: 1.25rem;
     margin-top: 1.25rem;
+    margin-right: 2.5rem;
 }
 
 .proyectos__proyectoFoto3 img {
@@ -461,7 +465,8 @@ h1 {
         grid-template-areas: "hh1" "m1" "p1" "a1" "f1";
     }
     .proyectos__proyectoInfo {
-        @include margins (1px, 1.875rem !important);
+        margin-left: 1px !important;
+        margin-right: 1.875rem !important;
             text-align: center;
     }
     .proyectos__proyectoFoto img {
@@ -510,7 +515,8 @@ h1 {
         width: 90% !important;
         margin-top: 0.625rem !important;
         margin-bottom: 0.625rem !important;
-        @include margins (5%, 5% !important);
+        margin-left: 5% !important;
+        margin-right: 5% !important;
     }
 }
 
@@ -630,14 +636,14 @@ h1 {
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     .card_style {
-        margin-left: 10px !important;
+        margin-left: 0.625rem !important;
     }
     .contenedorTexto {
         width: 37.5rem;
     }
     .sectionB__contenedorLista {
         width: 37.5rem !important;
-        margin-left: 80px !important;
+        margin-left: 5rem !important;
     }
 }
 

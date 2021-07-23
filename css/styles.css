@@ -487,12 +487,12 @@ h1 {
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .card_style {
-    margin-left: 10px !important; }
+    margin-left: 0.625rem !important; }
   .contenedorTexto {
     width: 37.5rem; }
   .sectionB__contenedorLista {
     width: 37.5rem !important;
-    margin-left: 80px !important; } }
+    margin-left: 5rem !important; } }
 
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
   .contenedorTexto {
