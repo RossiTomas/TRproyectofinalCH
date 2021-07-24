@@ -1,0 +1,47 @@
+/* FORMULARIOS */
+form {
+    width: 31.25rem;
+    background-color: white;
+    border-radius: 0.375rem;
+}
+
+.contenedorForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.formulario {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+    label {
+        text-decoration: bold;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    input {
+        border: 0.063rem black solid transparent;
+        display: block;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    label {
+        margin-top: 0.6rem;
+    }
+}
+
+.inputs {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}

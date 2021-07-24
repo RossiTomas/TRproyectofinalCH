@@ -1,0 +1,95 @@
+
+/* CSS RESET y BACKGROUND GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* FUENTES, ESTILOS, TAMAÑO Y COLORES */
+
+@font-face {
+    font-family: "Harabara";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Harabara"), url("https://fonts.cdnfonts.com/s/8571/Harabara.woff") format("woff");
+}
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Light'), local('Graphik-Light'),
+        url('Graphik-Light.woff2') format('woff2'),
+        url('Graphik-Light.woff') format('woff'),
+        url('Graphik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  
+#logo {
+    font-family: "Harabara", sans-serif;
+    font-size: 1.125rem !important;
+    letter-spacing: 1px;
+}
+
+header,
+h1 {
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+ol,
+ul {
+    font-family: "open-sans", sans-serif;
+    font-weight: normal;
+    font-weight: 375;
+    line-height: 1.5;
+}
+p,
+li {
+    font-family: 'Graphik';
+    font-size: 1.05rem;
+}
+
+h2,
+h3,
+h5,
+tr,
+th,
+td,
+form {
+    font-family: 'Graphik';
+    font-size: 1.3rem;
+    font-weight: 375;
+    line-height: 1.2;
+}
+
+
+.contenedorPrincipal h1 {
+    font-family: 'Graphik';
+}
+.contenedorPrincipal h2 {
+    font-family: 'Chronicle Display', sans-serif;
+    font-weight: 375;
+                                                
+}
+.contenedorCentral h1, h2 {
+    font-family: 'Graphik';
+}
+.mainHome__tituMain {
+    font-size: 2.5rem;
+}
+
+.titulares {
+    color: orangered;
+    margin: 0.625rem 0.625rem;
+}
+
+.whiteText,
+h5 {
+    color: white;
+}
+
+.centerText {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    padding: 2rem 2rem 2rem 2rem;
+}

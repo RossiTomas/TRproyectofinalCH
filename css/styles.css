@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* IMPORTS Y HOJAS DE ESTILO */
 /* CSS RESET y BACKGROUND GENERAL */
 * {
   margin: 0;
@@ -281,15 +282,6 @@ form {
 .proyectos__proyectoFoto3 {
   margin-right: 18.75rem; }
 
-/* MIXINS */
-.sectionA__box {
-  height: 330px;
-  width: 210px; }
-
-/* CONDICIONAL */
-h1 {
-  color: orangered; }
-
 /* CARDS PROYECTO */
 .card {
   margin-top: 5rem;
@@ -507,3 +499,12 @@ h1 {
   .sectionB__contenedorLista {
     width: 40rem;
     margin-left: 24rem; } }
+
+/* MIXINS */
+.sectionA__box {
+  height: 330px;
+  width: 210px; }
+
+/* CONDICIONAL */
+h1 {
+  color: orangered; }
