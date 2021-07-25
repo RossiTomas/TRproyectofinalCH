@@ -37,7 +37,7 @@ ul {
 
 p,
 li {
-  font-family: 'Graphik';
+  font-family: "open-sans", sans-serif;
   font-size: 1.05rem; }
 
 h2,
@@ -47,20 +47,13 @@ tr,
 th,
 td,
 form {
-  font-family: 'Graphik';
+  font-family: "open-sans", sans-serif;
   font-size: 1.3rem;
   font-weight: 375;
   line-height: 1.2; }
 
 .contenedorPrincipal h1 {
-  font-family: 'Graphik'; }
-
-.contenedorPrincipal h2 {
-  font-family: 'Chronicle Display', sans-serif;
-  font-weight: 375; }
-
-.contenedorCentral h1, h2 {
-  font-family: 'Graphik'; }
+  font-family: "open-sans", sans-serif; }
 
 .mainHome__tituMain {
   font-size: 2.5rem; }
@@ -493,12 +486,21 @@ form {
   .footerHome {
     position: relative; }
   .contenedorCentral h1, h2 {
-    margin-left: 5rem !important; } }
+    margin-left: 5rem !important; }
+  #h1I {
+    margin-left: 5rem !important; }
+  .sectionB__contenedorLista {
+    width: 35rem !important; } }
 
 @media only screen and (min-width: 1300px) and (max-width: 1400px) {
   .sectionB__contenedorLista {
-    width: 40rem;
+    width: 40rem !important;
     margin-left: 24rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1800px) {
+  .sectionB__contenedorLista {
+    width: 40rem !important;
+    margin-left: 20rem; } }
 
 /* MIXINS */
 .sectionA__box {

@@ -44,7 +44,7 @@ ul {
 }
 p,
 li {
-    font-family: 'Graphik';
+    font-family: "open-sans", sans-serif;
     font-size: 1.05rem;
 }
 
@@ -55,7 +55,7 @@ tr,
 th,
 td,
 form {
-    font-family: 'Graphik';
+    font-family: "open-sans", sans-serif;
     font-size: 1.3rem;
     font-weight: 375;
     line-height: 1.2;
@@ -63,15 +63,7 @@ form {
 
 
 .contenedorPrincipal h1 {
-    font-family: 'Graphik';
-}
-.contenedorPrincipal h2 {
-    font-family: 'Chronicle Display', sans-serif;
-    font-weight: 375;
-                                                
-}
-.contenedorCentral h1, h2 {
-    font-family: 'Graphik';
+    font-family: "open-sans", sans-serif;
 }
 .mainHome__tituMain {
     font-size: 2.5rem;
