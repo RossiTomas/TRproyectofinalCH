@@ -264,7 +264,7 @@ form {
     line-height: 1.125; }
 
 .proyectos__proyectoInfo {
-  margin-left: 12.5rem;
+  margin-left: 1.5rem;
   margin-right: 8rem; }
 
 .proyectos__proyectoFoto img {
@@ -320,6 +320,9 @@ form {
   .card .text-left {
     width: 100%;
     margin-left: 0.8rem; }
+
+.card__skill {
+  width: 18rem !important; }
 
 .cardContainer {
   display: flex;
