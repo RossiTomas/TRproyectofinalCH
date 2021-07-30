@@ -198,7 +198,10 @@ form {
   width: 100%;
   padding: 1rem 1rem 1rem 1rem; }
   .Skills h3 {
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-top: 2rem; }
+  .Skills h2 {
+    margin-bottom: 2rem; }
 
 .textTomato {
   color: tomato; }
@@ -208,6 +211,9 @@ form {
   height: 34.375rem; }
   .sectionA h2 {
     margin-top: 0.6rem; }
+
+.sectionB ul {
+  margin-bottom: 3rem; }
 
 .sectionB h2 {
   color: tomato;
@@ -234,7 +240,8 @@ form {
 .contenedorTexto {
   margin-top: 2.5rem;
   margin-left: 15.625rem;
-  margin-right: 37.5rem; }
+  margin-right: 37.5rem;
+  margin-bottom: 2rem; }
 
 .sectionB__contenedorLista {
   margin-left: 41.25rem;
@@ -257,7 +264,8 @@ form {
     line-height: 1.125; }
 
 .proyectos__proyectoInfo {
-  margin-left: 12.5rem; }
+  margin-left: 12.5rem;
+  margin-right: 8rem; }
 
 .proyectos__proyectoFoto img {
   width: 37.5rem;
@@ -280,8 +288,8 @@ form {
 
 /* CARDS PROYECTO */
 .card {
-  margin-top: 5rem;
-  margin-bottom: 7rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   background-color: #191919;
   border: 1px solid #302e2e;
   height: 28.125rem;
@@ -451,8 +459,8 @@ form {
   .contenedorPrincipal {
     margin-top: 4rem;
     margin-bottom: 35rem; }
-    .contenedorPrincipal h2 {
-      font-size: 1.3rem !important; }
+    .contenedorPrincipal h1 {
+      font-size: 2rem !important; }
   .contenedorCentral {
     width: 100%; } }
 
