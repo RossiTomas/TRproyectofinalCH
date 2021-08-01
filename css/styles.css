@@ -227,7 +227,7 @@ form {
 .contenedorCentral {
   margin-right: 12.5rem;
   margin-top: 2.5rem;
-  margin-bottom: 2.2rem; }
+  margin-bottom: 5.2rem; }
   .contenedorCentral h1 {
     margin-left: 15.625rem;
     font-weight: 700;
@@ -355,7 +355,13 @@ form {
 .f1 {
   grid-area: f1; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+  .footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%; } }
+
+@media only screen and (max-width: 1230px) {
   .g1 {
     display: grid;
     grid-template-columns: 100%;
@@ -481,6 +487,8 @@ form {
     background-image: url(../img/backgroundHome2.png); } }
 
 @media only screen and (min-width: 480px) {
+  .formulario {
+    padding-bottom: 5.2rem; }
   .footerHome {
     position: absolute;
     bottom: 0%;
@@ -499,8 +507,6 @@ form {
   .contenedorTexto {
     width: 60rem;
     margin-left: 5rem; }
-  .footerHome {
-    position: relative; }
   .contenedorCentral h1, h2 {
     margin-left: 5rem !important; }
   #h1I {
@@ -517,6 +523,46 @@ form {
   .sectionB__contenedorLista {
     width: 40rem !important;
     margin-left: 20rem; } }
+
+/* RESPONSIVE TEXTOS */
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .contenedorTexto {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+    margin-left: 0;
+    margin-right: 0; }
+  .contenedorCentral h1 {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+    margin-left: 0;
+    margin-right: 0; }
+  .contenedorCentral h2 {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+    margin-left: 0;
+    margin-right: 0; }
+  .sectionB__contenedorLista {
+    width: 700px !important;
+    margin-left: 25% !important;
+    padding-right: 7rem !important; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+  .sectionB__contenedorLista {
+    width: 850px;
+    margin-left: 33% !important; } }
+
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+  .sectionB__contenedorLista {
+    width: 600px !important;
+    margin-left: 20% !important;
+    padding-right: 7rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column !important;
+    margin-left: 33%;
+    margin-bottom: 1rem; } }
 
 /* MIXINS */
 .sectionA__box {
