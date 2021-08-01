@@ -350,7 +350,7 @@ form {
   grid-area: p1; }
 
 .a1 {
-  grid-template-areas: a1; }
+  grid-area: a1; }
 
 .f1 {
   grid-area: f1; }
