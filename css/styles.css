@@ -409,7 +409,7 @@ form {
     margin-left: 5% !important;
     margin-right: 5% !important; } }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 650px) and (max-width: 768px) {
   .card {
     margin-top: 0.625rem !important;
     margin-bottom: 0.625rem !important;
@@ -557,12 +557,16 @@ form {
     margin-left: 20% !important;
     padding-right: 7rem; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1050px) {
+@media only screen and (min-width: 770px) and (max-width: 1050px) {
   .cardContainer {
     display: flex;
     flex-direction: column !important;
     margin-left: 33%;
     margin-bottom: 1rem; } }
+
+@media only screen and (min-width: 500px) and (max-width: 650px) {
+  .card {
+    margin-left: 5rem !important; } }
 
 /* MIXINS */
 .sectionA__box {
