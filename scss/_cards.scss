@@ -192,7 +192,11 @@
 
 
 .card__skill {
-    width: 18rem !important;
+    width: 15rem !important;
+    height: 400px;
+    img {
+        width: 13rem !important;
+    }
 }
 .cardContainer {
     display: flex;

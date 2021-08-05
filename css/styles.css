@@ -324,7 +324,10 @@ form {
     margin-left: 0.8rem; }
 
 .card__skill {
-  width: 18rem !important; }
+  width: 15rem !important;
+  height: 400px; }
+  .card__skill img {
+    width: 13rem !important; }
 
 .cardContainer {
   display: flex;
@@ -567,6 +570,10 @@ form {
 @media only screen and (min-width: 500px) and (max-width: 650px) {
   .card {
     margin-left: 5rem !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1010px) {
+  .card__skill img {
+    width: 9rem !important; } }
 
 /* MIXINS */
 .sectionA__box {

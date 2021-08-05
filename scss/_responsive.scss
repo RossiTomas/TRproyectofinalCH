@@ -309,3 +309,10 @@
         margin-left: 5rem !important;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 1010px) {
+    .card__skill {
+        img {
+            width: 9rem !important;
+        }
+    }
+}
